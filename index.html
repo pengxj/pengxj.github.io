@@ -1,168 +1,669 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="Author" content="Xiaojiang Peng, 彭小江" />
-		<meta name="description" content="Xiaojiang Peng, Homepage, 彭小江, 深圳技术大学,人工智能学院,人工智能,深度学习,表情识别,人脸识别,情绪分析">
-		<meta name="keywords" content="Xiaojiang Peng, 彭小江,深圳技术大学,人工智能学院,人工智能,深度学习,表情识别,人脸识别,情绪分析">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>彭小江</title>
-		<link rel="stylesheet" href="my.css" type="text/css" />
-	</head>	
-	<body>
-		<div id="pagecell1">
-			<!--pagecell1-->
-			<div id="top">
-				
-				<h1><a href="index.html">彭小江</a></h1> 长聘教授，深圳技术大学人工智能学院
-				
-					
-				<div id="top-right">
-					 <a href="index.html"> 首页 </a>  | <a href="students.html">学生</a> | <a href="pubs.html">代表性论文列表</a>  | <a href="en.html"> English </a> 
-				</div>
-			</div>
-			
-			<div id="left">
-				<img src="me3.jpg" alt="" /><!--width="285" height="325" /-->
-				<p>&nbsp;</p>
-				<div>
-					<h2>链接</h2>
-						<p ><a href="mailto:pengxiaojiang@sztu.edu.cn" target="_blank"><i class="icon-share-alternitive"></i> Email</a></p>
-						<p ><a href="http://github.com/pengxj" target="_blank"><i class="icon-github"></i> Github</a></p>
-						<p ><a href="https://scholar.google.com/citations?user=7oRD67kAAAAJ&hl=zh-CN" target="_blank"><i class="icon-weibo"></i> 学术</a></p>
-						<p ><a href="https://www.zhihu.com/people/xpeng-44" target="_blank"><i class="icon-zhihu-square"></i> 知乎</a></p>
-						<h2>联系方式</h2>
-						<p class="list1" >广东省深圳市坪山区兰田路3002号 pengxiaojiang@sztu.edu.cn / xiaojiangp@gmail.com</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Xiaojiang Peng, 彭小江">
+<meta name="description" content="深圳技术大学人工智能学院教授，OpenFEEL 团队负责人，研究方向为情感计算、计算机视觉、多模态大模型、具身智能与生成式AI。">
+<meta name="keywords" content="Xiaojiang Peng, 彭小江, 深圳技术大学, 人工智能, 情感计算, 具身智能, OpenFEEL">
+<title>首页 · 彭小江</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   Xiaojiang Peng — Academic Homepage (OpenFEEL)
+   Modern academic style, adapted from Xipeng Qiu's homepage
+   ============================================================ */
+:root {
+  --c-bg: #ffffff;
+  --c-surface: #f7f8fa;
+  --c-surface-2: #eef1f5;
+  --c-border: #e2e6ec;
+  --c-text: #1f2937;
+  --c-muted: #64748b;
+  --c-heading: #0f172a;
+  --c-link: #1d4ed8;
+  --c-link-h: #1e3a8a;
+  --c-accent: #b91c1c;
+  --c-rule: #d8dde4;
+  --f-serif: "Source Serif Pro", "Source Serif 4", "Noto Serif SC", "Songti SC", "STSong", Georgia, "Times New Roman", serif;
+  --f-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "Noto Sans CJK SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.06);
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--f-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--c-text);
+  background: var(--c-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img { max-width: 100%; height: auto; display: block; }
+a:link, a:visited { color: var(--c-link); text-decoration: none; transition: color 0.15s ease; }
+a:hover { color: var(--c-link-h); text-decoration: underline; text-underline-offset: 2px; }
+h1, h2, h3, h4, h5, h6 { color: var(--c-heading); font-family: var(--f-sans); font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+h1 { font-size: clamp(1.8rem, 3vw, 2.25rem); line-height: 1.25; }
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--c-rule);
+  position: relative;
+  color: var(--c-heading);
+}
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -1px;
+  width: 2.5rem;
+  height: 2px;
+  background: var(--c-heading);
+  border-radius: 1px;
+}
+h3 { font-size: 1.05rem; margin: 1.25rem 0 0.5rem; color: var(--c-heading); }
+p { margin: 0.6rem 0; line-height: 1.75; }
+ol, ul { padding-left: 1.5rem; margin: 0.5rem 0 1rem; }
+li { margin: 0.35rem 0; }
+strong { font-weight: 600; color: var(--c-heading); }
+hr { border: 0; border-top: 1px solid var(--c-rule); margin: 2rem 0; }
+.hl { color: var(--c-accent); font-weight: 600; }
 
-					</div>
-					<hr>
-				
-			</div>
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--c-bg);
+  box-shadow: var(--shadow-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-			<div id="content">
-				
-				<div class="feature">
-					<h2>个人简介</h2>
-					<div class="story">
-					<p>
-						深圳技术大学教授、智能科学与技术系主任（校人工智能专业创始人）、IEEE 高级会员，是深圳大学硕士生导师、深圳“鹏城孔雀岗位B类人才，2022年以来长期入选斯坦福大学全球前2%科学家榜单。
-2015年至2017年分别在法国信息自动化研究所（INRIA）、瑞士洛桑理工Idiap研究所任博士后研究员,合作导师分别为德国院士<a href="http://lear.inrialpes.fr/people/schmid/">Cordelia Schmid</a>和洛桑理工大学教授
-						<a href="https://fleuret.org/francois/index.html">Francois Fleuret</a>
-，2018至2020在中国科学院深圳先进技术研究院任副研究员。主要研究方向为情感计算、计算机视觉、多模态大模型、具身智能、生成式AI等。目前担任国际期刊《IEEE Transactions on Affective Computing》、《Empathic Computing》等副编委，在国际顶级期刊会议IEEE TIP, CVPR, ICCV, NeurIPS等发表论文100余篇，谷歌学术引用8000余次，H指数35，曾获得广东省计算机学会优秀论文一等奖。主持包括国自然基金面上项目等10余项，获得授权发明专利10项，曾获得广东省科技进步技术发明一等奖，中国人工智能学会吴文俊人工智能科技进步二等奖、深圳市科技进步奖二等奖、中国自动化学会科技进步奖二等奖、中国仪器仪表学会科学技术进步奖三等奖。
-					</p>
-				</div>
-				
-			
-					<h2>最新消息</h2>
-					<ol>
-						<li>1篇关于具身智能机械臂操作综述被Neurocomputing接收. 2026/2/22</li>
-						<li>2篇多模态情绪理解论文EmoPrefer、MME-Emotion被ICLR接收，感谢与恭喜各位. 2026/1/29</li>
-						<li>1篇关于人体3D点云关键点检测论文被Expert Systems With Applications接收. 2025/10/29</li>
-						<li>1篇关于生成模型在噪声跨域图像识别论文被PR接收. 2025/10/29</li>
-						<li>1篇关于Mamba模型的剪枝论文被NeurIPS接收. 2025/10/29</li>
-						<li>1篇关于多模态控制服装编辑论文被ICME接收. 2025/8/29</li>
-						<li>欢迎大家来《<a href="https://www.icmlca.org/">第六届机器学习与计算机应用国际会议（ICMLCA）</a>》交流，10月17-19，深技大见. 2025/7/29</li>
-						<li>1篇关于半监督表情识别论文被CVIU期刊接收. 2025/7/29</li>
-						<li>1篇关于EEG情绪识别论文被TAFFC期刊接收. 2025/7/16</li>
-						<li>1篇关于VIT训练论文被ICCV 2025接收. 2025/7/16</li>
-						<li>1篇关于生成模型Diffusion训练加速的论文被CVPR 2025接收. 2025/2/28</li>
-						<li>1篇关于外骨骼角度估计论文被机器人IEEE Robotics and Automation Letters期刊接收. 2024/12/26</li>
-						<li>4篇关于内容情绪识别、人体Avatar、情绪语音生成、6D位姿论文被ICASSP 2025会议接收. 2024/12/26</li>
-						<li>多模态情绪理解大模型Emotion-LLaMA被NeurIPS 2024顶级会议接收. 2024/10/16</li>
-						<li>1篇关于表情识别的论文被Transactions on Multimedia接收. 2024/10/16</li>
-						<li>两篇关于情绪识别、立场检测论文被ACM MM 2024顶级会议接收. 2024/7/16</li>
-						<li>Stable Diffusion各类型内容生成鉴伪工作被中国PRCV顶级会议接收. 2024/7/10</li>
-						<li>因果时空推理工作被ICLR会议接收. 2024/3/10</li>
-						<li>对话立场检测工作被NLP会议COLING接收,在NAACL的视频对话情绪理解比赛获第三名. 2024/2/10</li>
-						<li>入选斯坦福大学2021全球前2%科学家榜单. 2023/10/25</li>
-						<li>1篇多模态情绪识别被ACM MM接收,在ACM MM多模态情绪识别<a href="https://codalab.lisn.upsaclay.fr/competitions/14166#results">MER 2023</a>获得亚军. 2023/07/17
-						</li>
-						<li>2篇关于车辆尾气排放视频检测文章被Applied Science接收. 2023/04/17
-						</li>
-						<li>入选斯坦福大学2021全球前2%科学家榜单(<a href="https://mp.weixin.qq.com/s/x-hDWiMjzGze3VyrKfPw5A"> News</a>). 2022/10/21</li>
-						<li>1篇关于铁轨线检测的文章被ACM MM接收. 2022/07/02
-						</li>
-						<li> Mathematics 特刊<a href="https://www.mdpi.com/journal/mathematics/special_issues/Computer_Vision_Deep_Learning_Artificial_Intelligence">"New Trends in Computer Vision, Deep Learning and Artificial Intelligence"</a> 上线.
-						</li>
-						<li>1篇关于跨数据库人脸表情识别文章被Applied Science接收. 2022/05/02
-						</li>
-						<li>1篇关于人脸识别大规模训练文章被CVPR接收. 2022/03/08
-						</li>
-						<li>1篇关于行人重识别文章被Pattern Recognition接收. 2022/01/17
-						</li>
-						<li>1篇关于上下文内容情感识别文章被IJCB2021接收. 2021/07/01
-						</li>
-						<li>2篇关于人与物交互识别的文章被CVPR2021接收. 2021/03/22
-						</li>
-						<li>1篇关于视频行为预测的文章被Neurocomputing接收. 2021/01/25 
-						</li>
-						<li>3篇文章被ECCV2020接收,主题为噪声监督、多标签分类、人与物交互识别. 2020/07/03
-						</li>
-						<li>1篇文章被CVIU期刊接收，主题为噪声监督深度学习. 2020/04/02
-						</li>
-						<li>1篇文章被CVPR2020接收，主题为大规模人脸表情识别. 2020/02/4
-						</li>
-						
-					</ol>
-					
-					<h2>主持项目</h2>
-					<ol>
-						<li>基于移动端深度网络的视频黑烟车辆抓拍算法设计与优化, 深圳市高等院校稳定支持项目，2022.11-2025.10</li>
-						<li>开放场景中真实世界的面部表情分析关键技术与应用, 国家自然基金面上项目，2022.1-2025.12</li>
-						<li>基于红外图像的目标检测算法, 中科院横向项目，2022.9-2023.4</li>
-						<del><li>AI互动核心算法及系统技术开发，深圳瑞众科技委托项目，2020-2021.12</li></del>
-						<del><li>黑暗环境下人员身份识别技术, 保密单位，2020.07 - 2021.06</li></del>
-						<del><li>在线视频行为检测, 华为委托项目，2019.06 - 2020.07</li></del>
-						<del><li>商品图像细粒度分类和弱监督算法研究, 广州唯品会委托项目，2018.04 - 2020.05</li></del>
-						<del><li>面向多任务的人脸检测与关键点定位算法研究, 南京中兴通讯委托项目，2018.01 - 2019.12</li></del>
-						<del><li>基于多通道深度卷积神经网络的行为分析研究, 国家自然基金青年项目，2016.01 - 2018.12</li></del>
-					</ol>
+/* -------- Header -------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 1.5rem 2rem 1.25rem;
+  border-bottom: 1px solid var(--c-border);
+  background: var(--c-bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: saturate(150%) blur(6px);
+  background-color: rgba(255, 255, 255, 0.92);
+}
+.site-header__brand {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.85rem;
+  min-width: 0;
+}
+.site-header__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--c-heading) !important;
+  letter-spacing: -0.01em;
+}
+.site-header__name:hover { text-decoration: none; color: var(--c-link) !important; }
+.site-header__role { font-size: 0.9rem; color: var(--c-muted); line-height: 1.5; }
+.site-header__role a { font-weight: 600; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.92rem; }
+.site-nav a {
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  color: var(--c-muted);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.site-nav a:hover { background: var(--c-surface); color: var(--c-heading); text-decoration: none; }
+.site-nav a.is-current { color: var(--c-heading); font-weight: 600; background: var(--c-surface); }
 
-					<h2>学术奖励</h2>
-					<ol>
-						<li>数字化智能建造监控平台关键技术及应用，中国自动化学会科技进步奖二等奖，2021, 排名：3/15</li>
-						<li>智慧工地物联网多模态智能监测与管控平台关键技术与应用，中国仪器仪表学会科技进步三等奖，2021，排名：6/15</li>
-						<li>视频的深度表征与识别技术及应用，广东省科学进步奖技术发明一等奖, 2019，排名：5/7</li>
-						<li>视频序列的深度表征与理解技术及应用，中国人工智能协会吴文俊人工智能科技进步奖二等奖, 2019，排名：4/6</li>
-						<li>复杂视频的深度表征和理解技术及应用，深圳市科技进步奖二等奖, 2019，排名：4/6</li>
-						<li>深圳市孔雀人才C、南山领航人才</li>
-					</ol>
-				
-					<h2>学术任职</h2>	
-					<h3>Associate Editor</h3>
-					<p class="list">IEEE Transactions on Affective Computing</p>
-					<p class="list">Empathic Computing</p>
-					
-					<h3>会议PC/SPC</h3>
-					<p class="list">PC: CVPR (2019-), ECCV (2018-), ICCV (2019-), AAAI (2019-), IJCAI (2018-)</p>
-					<p class="list">SPC：IJCAI (2021)</p>	
-					
-					
-				
-				</div>
-				
-				
-				
-				<div class="feature">
+.page__main { flex: 1; display: block; }
+.layout-with-sidebar { display: grid; grid-template-columns: 1fr; gap: 0; }
+@media (min-width: 880px) {
+  .layout-with-sidebar { grid-template-columns: 260px 1fr; }
+}
+.layout-content { padding: 2rem 2.25rem 3rem; min-width: 0; }
+@media (max-width: 640px) {
+  .layout-content { padding: 1.5rem 1.25rem 2rem; }
+}
 
-					<h2>课程</h2>
-					<ol>
-						<li>本科生课程：<a href="https://github.com/pengxj/DeepLearningCourse">深度学习方法与应用</a>
-						<li>本科生课程: <a href="https://github.com/pengxj/PythonCourse">Python程序设计</a>，<a href="https://github.com/pengxj/ComputerVisionCourse">计算机视觉</a>，Java程序设计</li>
-						<li>研究生课程： <a href="https://github.com/pengxj/DeepLearningCourse">神经网络与深度学习 </a> </li>
-					</ol>
-				</div>
-				<div class="feature">
-				<h3>推荐链接</h3>
-			          <a href="http://vipl.ict.ac.cn/team.php?id=1">VIPL</a> | <a href="http://mmlab.siat.ac.cn/">SIAT</a> | <a href="http://whdeng.cn/">BUPT</a> |
-					<a href="http://aip.seu.edu.cn/en/zhengwm/#4">AIP Lab</a>| <a href="http://mmlab.ie.cuhk.edu.hk/">CUHK</a> |
-					 <a href="https://www.media.mit.edu/groups/affective-computing/overview/">MIT</a> | 
-					<a href="https://ibug.doc.ic.ac.uk/">iBUG</a> | <a href="http://thoth.inrialpes.fr/">INRIA-THOTH | <a href="https://www.robots.ox.ac.uk/~vgg/">VGG</a>
-				</div>
-				
-				
-			</div><!-- end of content-->
-		</div>
-		<!-- end of pagecell1-->
-	</body>
+/* -------- Sidebar -------- */
+.sidebar {
+  padding: 2rem 1.5rem 2rem;
+  border-right: 1px solid var(--c-border);
+  background: var(--c-bg);
+}
+@media (max-width: 879px) {
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--c-border);
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    padding: 1.5rem 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .sidebar { grid-template-columns: 1fr; text-align: left; }
+}
+.sidebar__photo {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  display: block;
+}
+@media (max-width: 879px) {
+  .sidebar__photo { margin: 0; max-width: 140px; }
+}
+.sidebar__section { margin-top: 1.4rem; }
+@media (max-width: 879px) {
+  .sidebar__section { margin-top: 1rem; }
+  .sidebar > .sidebar__photo { grid-row: span 4; }
+}
+.sidebar__section:first-of-type { margin-top: 0; }
+.sidebar h2 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--c-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--c-rule);
+  padding-bottom: 0.4rem;
+  margin: 0 0 0.7rem;
+}
+.sidebar h2::before { display: none; }
+.sidebar__links { list-style: none; padding: 0; margin: 0; }
+.sidebar__links li { margin: 0.1rem 0; }
+.sidebar__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  color: var(--c-text);
+  font-size: 0.95rem;
+}
+.sidebar__links a:hover { color: var(--c-link); text-decoration: none; }
+.sidebar__links svg { color: var(--c-muted); width: 17px; height: 17px; flex-shrink: 0; transition: color 0.15s ease; }
+.sidebar__links a:hover svg { color: var(--c-link); }
+.sidebar__contact { font-size: 0.86rem; color: var(--c-muted); line-height: 1.55; margin: 0; }
+.sidebar__team { font-size: 0.95rem; color: var(--c-text); margin: 0; line-height: 1.6; }
+
+/* -------- Hero / Lede -------- */
+.hero { padding: 0.5rem 0 1.5rem; overflow: hidden; }
+.hero__subtitle { color: var(--c-muted); font-size: 1.05rem; margin: 0; }
+.hero__bio { margin-top: 1rem; font-size: 1.02rem; line-height: 1.8; color: var(--c-text); }
+.hero__bio p { margin: 0.75rem 0; }
+
+/* -------- Section -------- */
+.section { margin: 2rem 0; }
+.page-title { font-size: clamp(1.6rem, 3vw, 2rem); margin: 0 0 1rem; }
+
+/* -------- Recruitment callout -------- */
+.callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+  padding: 0.85rem 1.1rem;
+  background: linear-gradient(180deg, #fdf6ec 0%, #fbf2e3 100%);
+  border: 1px solid #e8d8b3;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.callout__badge {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  background: #b45309;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.callout__text { margin: 0; color: #6b4019; }
+.callout__text p { margin: 0; }
+.callout__text p + p { margin-top: 0.4rem; }
+.callout__text a { color: #92400e; font-weight: 600; margin-left: 0.5rem; white-space: nowrap; }
+.callout__text p a:first-child { margin-left: 0; }
+.callout__text a:hover { color: #6b4019; text-decoration: underline; }
+@media (max-width: 540px) {
+  .callout { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+}
+
+/* -------- Research topic grid -------- */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+.topic-card {
+  padding: 0.85rem 1rem;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.topic-card:hover { border-color: var(--c-link); transform: translateY(-1px); }
+.topic-card__title { margin: 0 0 0.3rem; font-size: 0.98rem; color: var(--c-heading); text-transform: none; letter-spacing: 0; }
+.topic-card__desc { margin: 0; color: var(--c-muted); font-size: 0.88rem; line-height: 1.6; }
+
+/* -------- Timeline lists (news, awards, pubs) -------- */
+.news, .list-academic, .pub-list, .service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid var(--c-rule);
+}
+.news__item, .list-academic > li, .pub-list > li, .service-list > li {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 1rem;
+  padding: 0.55rem 0 0.55rem 1.25rem;
+  margin-left: -1px;
+  position: relative;
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+.news__item::before, .list-academic > li::before, .pub-list > li::before, .service-list > li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 1.1rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c-bg);
+  border: 2px solid var(--c-muted);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.news__item:hover::before, .list-academic > li:hover::before, .pub-list > li:hover::before, .service-list > li:hover::before {
+  border-color: var(--c-link);
+}
+.news__date, .list-academic .year, .pub-list .entry__year, .service-list .service__year {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--c-muted);
+  font-size: 0.8rem;
+  padding-top: 0.15rem;
+}
+.news__text { color: var(--c-text); }
+@media (max-width: 520px) {
+  .news__item, .list-academic > li, .pub-list > li, .service-list > li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .news__date, .list-academic .year, .pub-list .entry__year, .service-list .service__year { font-size: 0.78rem; }
+}
+
+/* -------- Courses -------- */
+.course-list { list-style: none; padding: 0; margin: 0; }
+.course-list li {
+  padding: 0.55rem 0;
+  border-bottom: 1px dashed var(--c-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.9rem;
+}
+.course-list li:last-child { border-bottom: none; }
+.course-list .course__title { font-weight: 600; color: var(--c-heading); }
+.course-list .course__note { color: var(--c-muted); font-size: 0.92rem; }
+
+/* -------- Services -------- */
+.service-list .service__org { color: var(--c-text); }
+.service-list .service__role { color: var(--c-muted); font-size: 0.88rem; }
+
+/* -------- Project list (hosted projects) -------- */
+.proj-list { list-style: none; padding: 0; margin: 0; counter-reset: proj; }
+.proj-list li {
+  counter-increment: proj;
+  padding: 0.55rem 0 0.55rem 2.2rem;
+  position: relative;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  border-bottom: 1px dashed var(--c-border);
+}
+.proj-list li:last-child { border-bottom: none; }
+.proj-list li::before {
+  content: counter(proj);
+  position: absolute;
+  left: 0; top: 0.6rem;
+  width: 1.5rem; height: 1.5rem;
+  border-radius: 50%;
+  background: var(--c-surface-2);
+  color: var(--c-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proj-list .proj-tag {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: var(--c-surface-2);
+  color: var(--c-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  vertical-align: 0.12em;
+}
+
+/* -------- Students page -------- */
+.page-intro {
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1rem;
+  background: var(--c-surface);
+  border-left: 3px solid var(--c-link);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--c-text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.students-group {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.5rem 0.85rem;
+  align-items: start;
+  margin: 0.45rem 0;
+}
+.students-group__label {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.22rem 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 0.2rem;
+  line-height: 1.35;
+  white-space: normal;
+  word-break: keep-all;
+  background: var(--c-surface-2);
+  color: var(--c-muted);
+}
+.students-group__label--ms { background: #e0e7ff; color: #3730a3; }
+.students-group__label--visiting { background: #fce7f3; color: #9d174d; }
+.students-group__names {
+  margin: 0;
+  line-height: 1.85;
+  color: var(--c-text);
+  font-size: 0.95rem;
+}
+.students-group__names .annot { font-size: 0.82em; color: var(--c-muted); }
+.visiting-students {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: var(--c-surface);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.visiting-students .annot { font-size: 0.85em; color: var(--c-muted); }
+@media (max-width: 520px) {
+  .students-group { grid-template-columns: 1fr; gap: 0.15rem; }
+  .students-group__label { justify-self: start; }
+}
+
+/* -------- Publication entries -------- */
+.entry { transition: background 0.15s ease; }
+.pub-list > li.entry { border-radius: var(--radius-sm); }
+.entry:hover { background: var(--c-surface); }
+.entry__body { min-width: 0; }
+.entry__body > a { font-size: 0.88rem; white-space: nowrap; }
+.paper-title { color: var(--c-heading); font-weight: 600; }
+.entry a { font-size: 0.88rem; color: var(--c-link); white-space: nowrap; }
+.author { color: var(--c-muted); font-size: 0.92rem; margin-top: 0.2rem; }
+.author strong { color: var(--c-text); }
+.pub-venue { color: var(--c-muted); font-size: 0.9rem; }
+
+/* -------- Footer -------- */
+.site-footer {
+  border-top: 1px solid var(--c-border);
+  padding: 1.25rem 2rem;
+  color: var(--c-muted);
+  font-size: 0.86rem;
+  text-align: center;
+  background: var(--c-bg);
+}
+.site-footer a { color: var(--c-muted); }
+.site-footer a:hover { color: var(--c-link); }
+.site-footer__sep { margin: 0 0.5rem; opacity: 0.5; }
+
+/* -------- Print -------- */
+@media print {
+  .site-nav, .site-footer { display: none; }
+  .site-header { position: static; box-shadow: none; }
+  .page { box-shadow: none; }
+  body { background: white; }
+}
+</style>
+</head>
+<body class="lang-zh">
+  <div class="page">
+    <header class="site-header">
+      <div class="site-header__brand">
+        <a class="site-header__name" href="index.html">彭小江</a>
+        <span class="site-header__role">深圳技术大学人工智能学院 · OpenFEEL 团队负责人</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" class="is-current" aria-current="page">首页</a><a href="students.html">学生</a><a href="pubs.html">研究方向与代表性论文</a><a href="en.html">English</a>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <div class="layout-with-sidebar">
+        <aside class="sidebar">
+          <img class="sidebar__photo" src="assets/me3.jpg" alt="彭小江">
+
+          <div class="sidebar__section">
+            <h2>团队主页</h2>
+            <p class="sidebar__team"><strong>OpenFEEL</strong> Group<br>Open Frontier Emotional and Embodied Learning</p>
+          </div>
+
+          <div class="sidebar__section">
+            <h2>链接</h2>
+            <ul class="sidebar__links">
+              <li>
+                <a href="mailto:pengxiaojiang@sztu.edu.cn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>Email</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/pengxj" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://scholar.google.com/citations?user=7oRD67kAAAAJ&hl=zh-CN" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M5 13.18V17c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.82L12 18 5 13.18z"/></svg>
+                  <span>Google Scholar</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.zhihu.com/people/xpeng-44" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4"/><text x="12" y="17" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="sans-serif">知</text></svg>
+                  <span>知乎</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar__section">
+            <h2>联系方式</h2>
+            <p class="sidebar__contact">广东省深圳市坪山区兰田路3002号<br>pengxiaojiang@sztu.edu.cn / xiaojiangp@gmail.com</p>
+          </div>
+        </aside>
+
+        <div class="layout-content">
+          <section class="hero">
+            <p class="hero__subtitle">深圳技术大学教授 · 人工智能学院 · OpenFEEL 团队负责人</p>
+            <div class="hero__bio">
+              <p>深圳技术大学教授、智能科学与技术系主任（校人工智能专业创始人）、<span class="hl">IEEE 高级会员</span>，是深圳大学硕士生导师、深圳"鹏城孔雀岗位B类人才"，2022年以来长期入选斯坦福大学全球前2%科学家榜单。</p>
+              <p>2015年至2017年分别在法国信息自动化研究所（INRIA）、瑞士洛桑理工 Idiap 研究所任博士后研究员，合作导师分别为德国院士 <a href="http://lear.inrialpes.fr/people/schmid/" target="_blank" rel="noopener">Cordelia Schmid</a> 和洛桑理工大学教授 <a href="https://fleuret.org/francois/index.html" target="_blank" rel="noopener">Francois Fleuret</a>；2018至2020在中国科学院深圳先进技术研究院任副研究员。主要研究方向为<span class="hl">情感计算、计算机视觉、多模态大模型、具身智能、生成式AI</span>等。目前担任国际期刊《IEEE Transactions on Affective Computing》《Empathic Computing》等副编委，在国际顶级期刊会议 IEEE TIP、CVPR、ICCV、NeurIPS 等发表论文100余篇，谷歌学术引用8000余次，H指数35。主持包括国自然基金面上项目等10余项，获得授权发明专利10项，曾获得广东省科技进步技术发明一等奖、中国人工智能学会吴文俊人工智能科技进步二等奖、深圳市科技进步奖二等奖、中国自动化学会科技进步奖二等奖、中国仪器仪表学会科学技术进步奖三等奖。</p>
+            </div>
+          </section>
+
+          <aside class="callout callout--recruit">
+            <span class="callout__badge">招生中</span>
+            <div class="callout__text">
+              <p>OpenFEEL 致力于开放前沿的情感与具身智能研究，招募对情感计算、具身智能、多模态大模型与生成式 AI 充满热情的研究人员、工程师与研究生。</p>
+              <p><a href="mailto:pengxiaojiang@sztu.edu.cn">欢迎邮件联系 →</a></p>
+            </div>
+          </aside>
+
+          <section class="section">
+            <h2>研究方向</h2>
+            <p>围绕开放前沿的情感与具身学习（OpenFEEL），从多模态感知、情感理解到具身交互与生成，构建端到端的研究链路。</p>
+            <div class="topic-grid">
+              <div class="topic-card">
+                <h3 class="topic-card__title">情感计算</h3>
+                <p class="topic-card__desc">面部表情识别、多模态情绪理解、情感大模型与语音情感。</p>
+              </div>
+              <div class="topic-card">
+                <h3 class="topic-card__title">计算机视觉</h3>
+                <p class="topic-card__desc">人脸识别、行为识别、3D 重建与人-物交互。</p>
+              </div>
+              <div class="topic-card">
+                <h3 class="topic-card__title">多模态大模型</h3>
+                <p class="topic-card__desc">多模态情绪理解大模型、指令微调与对齐。</p>
+              </div>
+              <div class="topic-card">
+                <h3 class="topic-card__title">具身智能</h3>
+                <p class="topic-card__desc">机械臂操作、具身智能体与物理世界交互。</p>
+              </div>
+              <div class="topic-card">
+                <h3 class="topic-card__title">生成式AI</h3>
+                <p class="topic-card__desc">扩散模型、可控图像编辑与内容鉴伪。</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>最新消息</h2>
+            <ol class="news">
+              <li class="news__item"><span class="news__date">2026/02/22</span><span class="news__text">1篇关于具身智能机械臂操作综述被 Neurocomputing 接收</span></li>
+              <li class="news__item"><span class="news__date">2026/01/29</span><span class="news__text">2篇多模态情绪理解论文 <strong>EmoPrefer</strong>、<strong>MME-Emotion</strong> 被 ICLR 接收，感谢与恭喜各位</span></li>
+              <li class="news__item"><span class="news__date">2025/10/29</span><span class="news__text">1篇关于人体3D点云关键点检测论文被 Expert Systems With Applications 接收</span></li>
+              <li class="news__item"><span class="news__date">2025/10/29</span><span class="news__text">1篇关于生成模型在噪声跨域图像识别论文被 PR 接收</span></li>
+              <li class="news__item"><span class="news__date">2025/10/29</span><span class="news__text">1篇关于 Mamba 模型的剪枝论文被 NeurIPS 接收</span></li>
+              <li class="news__item"><span class="news__date">2025/08/29</span><span class="news__text">1篇关于多模态控制服装编辑论文被 ICME 接收</span></li>
+              <li class="news__item"><span class="news__date">2025/07/29</span><span class="news__text">欢迎大家来《<a href="https://www.icmlca.org/" target="_blank" rel="noopener">第六届机器学习与计算机应用国际会议（ICMLCA）</a>》交流，10月17-19，深技大见</span></li>
+              <li class="news__item"><span class="news__date">2025/07/29</span><span class="news__text">1篇关于半监督表情识别论文被 CVIU 期刊接收</span></li>
+              <li class="news__item"><span class="news__date">2025/07/16</span><span class="news__text">1篇关于 EEG 情绪识别论文被 TAFFC 期刊接收</span></li>
+              <li class="news__item"><span class="news__date">2025/07/16</span><span class="news__text">1篇关于 ViT 训练论文被 ICCV 2025 接收</span></li>
+              <li class="news__item"><span class="news__date">2025/02/28</span><span class="news__text">1篇关于生成模型 Diffusion 训练加速的论文被 CVPR 2025 接收</span></li>
+              <li class="news__item"><span class="news__date">2024/12/26</span><span class="news__text">1篇关于外骨骼角度估计论文被机器人 IEEE Robotics and Automation Letters 期刊接收</span></li>
+              <li class="news__item"><span class="news__date">2024/12/26</span><span class="news__text">4篇关于内容情绪识别、人体 Avatar、情绪语音生成、6D 位姿论文被 ICASSP 2025 会议接收</span></li>
+              <li class="news__item"><span class="news__date">2024/10/16</span><span class="news__text">多模态情绪理解大模型 <strong>Emotion-LLaMA</strong> 被 NeurIPS 2024 顶级会议接收</span></li>
+              <li class="news__item"><span class="news__date">2024/10/16</span><span class="news__text">1篇关于表情识别的论文被 Transactions on Multimedia 接收</span></li>
+              <li class="news__item"><span class="news__date">2024/07/16</span><span class="news__text">两篇关于情绪识别、立场检测论文被 ACM MM 2024 顶级会议接收</span></li>
+              <li class="news__item"><span class="news__date">2024/07/10</span><span class="news__text">Stable Diffusion 各类型内容生成鉴伪工作被中国 PRCV 顶级会议接收</span></li>
+              <li class="news__item"><span class="news__date">2024/03/10</span><span class="news__text">因果时空推理工作被 ICLR 会议接收</span></li>
+              <li class="news__item"><span class="news__date">2024/02/10</span><span class="news__text">对话立场检测工作被 NLP 会议 COLING 接收，在 NAACL 的视频对话情绪理解比赛获第三名</span></li>
+              <li class="news__item"><span class="news__date">2023/10/25</span><span class="news__text">入选斯坦福大学2021全球前2%科学家榜单</span></li>
+              <li class="news__item"><span class="news__date">2023/07/17</span><span class="news__text">1篇多模态情绪识别被 ACM MM 接收，在 ACM MM 多模态情绪识别 <a href="https://codalab.lisn.upsaclay.fr/competitions/14166#results" target="_blank" rel="noopener">MER 2023</a> 获得亚军</span></li>
+              <li class="news__item"><span class="news__date">2023/04/17</span><span class="news__text">2篇关于车辆尾气排放视频检测文章被 Applied Science 接收</span></li>
+              <li class="news__item"><span class="news__date">2022/10/21</span><span class="news__text">入选斯坦福大学2021全球前2%科学家榜单（<a href="https://mp.weixin.qq.com/s/x-hDWiMjzGze3VyrKfPw5A" target="_blank" rel="noopener">News</a>）</span></li>
+              <li class="news__item"><span class="news__date">2022/07/02</span><span class="news__text">1篇关于铁轨线检测的文章被 ACM MM 接收</span></li>
+              <li class="news__item"><span class="news__date">2022/06</span><span class="news__text">Mathematics 特刊 <a href="https://www.mdpi.com/journal/mathematics/special_issues/Computer_Vision_Deep_Learning_Artificial_Intelligence" target="_blank" rel="noopener">"New Trends in Computer Vision, Deep Learning and Artificial Intelligence"</a> 上线</span></li>
+              <li class="news__item"><span class="news__date">2022/05/02</span><span class="news__text">1篇关于跨数据库人脸表情识别文章被 Applied Science 接收</span></li>
+              <li class="news__item"><span class="news__date">2022/03/08</span><span class="news__text">1篇关于人脸识别大规模训练文章被 CVPR 接收</span></li>
+              <li class="news__item"><span class="news__date">2022/01/17</span><span class="news__text">1篇关于行人重识别文章被 Pattern Recognition 接收</span></li>
+              <li class="news__item"><span class="news__date">2021/07/01</span><span class="news__text">1篇关于上下文内容情感识别文章被 IJCB2021 接收</span></li>
+              <li class="news__item"><span class="news__date">2021/03/22</span><span class="news__text">2篇关于人与物交互识别的文章被 CVPR2021 接收</span></li>
+              <li class="news__item"><span class="news__date">2021/01/25</span><span class="news__text">1篇关于视频行为预测的文章被 Neurocomputing 接收</span></li>
+              <li class="news__item"><span class="news__date">2020/07/03</span><span class="news__text">3篇文章被 ECCV2020 接收，主题为噪声监督、多标签分类、人与物交互识别</span></li>
+              <li class="news__item"><span class="news__date">2020/04/02</span><span class="news__text">1篇文章被 CVIU 期刊接收，主题为噪声监督深度学习</span></li>
+              <li class="news__item"><span class="news__date">2020/02/04</span><span class="news__text">1篇文章被 CVPR2020 接收，主题为大规模人脸表情识别</span></li>
+            </ol>
+          </section>
+
+          <section class="section">
+            <h2>学术奖励</h2>
+            <ol class="list-academic">
+              <li><span class="year">2021</span><span>数字化智能建造监控平台关键技术及应用，<span class="hl">中国自动化学会科技进步奖二等奖</span>，排名：3/15</span></li>
+              <li><span class="year">2021</span><span>智慧工地物联网多模态智能监测与管控平台关键技术与应用，中国仪器仪表学会科技进步三等奖，排名：6/15</span></li>
+              <li><span class="year">2019</span><span>视频的深度表征与识别技术及应用，<span class="hl">广东省科学进步奖技术发明一等奖</span>，排名：5/7</span></li>
+              <li><span class="year">2019</span><span>视频序列的深度表征与理解技术及应用，中国人工智能协会吴文俊人工智能科技进步奖二等奖，排名：4/6</span></li>
+              <li><span class="year">2019</span><span>复杂视频的深度表征和理解技术及应用，深圳市科技进步奖二等奖，排名：4/6</span></li>
+              <li><span class="year">2019</span><span>深圳市孔雀人才C、南山领航人才</span></li>
+            </ol>
+          </section>
+
+          <section class="section">
+            <h2>主持项目</h2>
+            <ol class="proj-list">
+              <li>基于移动端深度网络的视频黑烟车辆抓拍算法设计与优化，深圳市高等院校稳定支持项目，2022.11-2025.10</li>
+              <li>开放场景中真实世界的面部表情分析关键技术与应用，国家自然基金面上项目，2022.1-2025.12</li>
+              <li>基于红外图像的目标检测算法，中科院横向项目，2022.9-2023.4</li>
+              <li>AI互动核心算法及系统技术开发，深圳瑞众科技委托项目，2020-2021.12 <span class="proj-tag">已完成</span></li>
+              <li>黑暗环境下人员身份识别技术，保密单位，2020.07-2021.06 <span class="proj-tag">已完成</span></li>
+              <li>在线视频行为检测，华为委托项目，2019.06-2020.07 <span class="proj-tag">已完成</span></li>
+              <li>商品图像细粒度分类和弱监督算法研究，广州唯品会委托项目，2018.04-2020.05 <span class="proj-tag">已完成</span></li>
+              <li>面向多任务的人脸检测与关键点定位算法研究，南京中兴通讯委托项目，2018.01-2019.12 <span class="proj-tag">已完成</span></li>
+              <li>基于多通道深度卷积神经网络的行为分析研究，国家自然基金青年项目，2016.01-2018.12 <span class="proj-tag">已完成</span></li>
+            </ol>
+          </section>
+
+          <section class="section">
+            <h2>学术任职</h2>
+            <h3>Associate Editor</h3>
+            <ul class="service-list">
+              <li><span class="service__year">-</span><span class="service__org">IEEE Transactions on Affective Computing</span></li>
+              <li><span class="service__year">-</span><span class="service__org">Empathic Computing</span></li>
+            </ul>
+            <h3>会议 PC / SPC</h3>
+            <ul class="service-list">
+              <li><span class="service__year">PC</span><span class="service__org">CVPR (2019-), ECCV (2018-), ICCV (2019-), AAAI (2019-), IJCAI (2018-)</span></li>
+              <li><span class="service__year">SPC</span><span class="service__org">IJCAI (2021)</span></li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>课程</h2>
+            <ol class="course-list">
+              <li><a class="course__title" href="https://github.com/pengxj/DeepLearningCourse" target="_blank" rel="noopener">深度学习方法与应用</a><span class="course__note">本科生课程</span></li>
+              <li><a class="course__title" href="https://github.com/pengxj/PythonCourse" target="_blank" rel="noopener">Python程序设计</a><span class="course__note">本科生课程</span></li>
+              <li><a class="course__title" href="https://github.com/pengxj/ComputerVisionCourse" target="_blank" rel="noopener">计算机视觉</a><span class="course__note">本科生课程</span></li>
+              <li><span class="course__title">Java程序设计</span><span class="course__note">本科生课程</span></li>
+              <li><a class="course__title" href="https://github.com/pengxj/DeepLearningCourse" target="_blank" rel="noopener">神经网络与深度学习</a><span class="course__note">研究生课程</span></li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span>&copy; 2026 彭小江</span>
+        <span class="site-footer__sep">·</span>
+        <a href="mailto:pengxiaojiang@sztu.edu.cn">pengxiaojiang@sztu.edu.cn</a>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
