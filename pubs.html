@@ -1,654 +1,962 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="utf-8">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="Author" content="Xiaojiang Peng, 彭小江" />
-		<meta name="description" content="Xiaojiang Peng, Homepage, Shenzhen Technology University, 人工智能,深度学习,表情识别,人脸识别,情绪分析">
-		<meta name="keywords" content="Xiaojiang Peng, 彭小江,深圳技术大学,大数据与互联网学院,人工智能,深度学习,表情识别,人脸识别,情绪分析">
-		<title>Xiaojiang Peng's Selected Publications  </title>
-		<link rel="stylesheet" href="my.css" type="text/css" />
-		<style type="text/css">
-			div.noshow { display: none;}
-		</style>
-		<script type="text/javascript">
-			<!--
-
-
-
-			function toggleInfo(articleid,info) {
-
-				var entry = document.getElementById(articleid);
-				var abs = document.getElementById('abs_'+articleid);
-				var rev = document.getElementById('rev_'+articleid);
-				var bib = document.getElementById('bib_'+articleid);
-
-				if (abs && info == 'abstract') {
-					if(abs.className.indexOf('abstract') != -1) {
-						abs.className.indexOf('noshow') == -1?abs.className = 'abstract noshow':abs.className = 'abstract';
-					}
-				} else if (rev && info == 'review') {
-					if(rev.className.indexOf('review') != -1) {
-						rev.className.indexOf('noshow') == -1?rev.className = 'review noshow':rev.className = 'review';
-					}
-				} else if (bib && info == 'bibtex') {
-					if(bib.className.indexOf('bibtex') != -1) {
-						bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-					}
-				} else {
-					return;
-				}
-
-				// check if one or the other is available
-				var revshow = false;
-				var absshow = false;
-				var bibshow = false;
-				(abs && abs.className.indexOf('noshow') == -1)? absshow = true: absshow = false;
-				(rev && rev.className.indexOf('noshow') == -1)? revshow = true: revshow = false;
-				(bib && bib.className == 'bibtex')? bibshow = true: bibshow = false;
-
-				// highlight original entry
-				if(entry) {
-					if (revshow || absshow || bibshow) {
-						entry.className = 'entry highlight show';
-					} else {
-						entry.className = 'entry show';
-					}
-				}
-
-				// When there's a combination of abstract/review/bibtex showing, need to add class for correct styling
-				if(absshow) {
-					(revshow||bibshow)?abs.className = 'abstract nextshow':abs.className = 'abstract';
-				}
-				if (revshow) {
-					bibshow?rev.className = 'review nextshow': rev.className = 'review';
-				}
-
-			}
-
-			function showAll(){
-				// first close all abstracts, reviews, etc.
-				closeAllInfo();
-
-				for (var i = 0; i < numEntries; i++){
-					entryRows[i].className = 'entry show';
-				}
-			}
-
-			function closeAllInfo(){
-				for (var i=0; i < numInfo; i++){
-					if (infoRows[i].className.indexOf('noshow') ==-1) {
-						infoRows[i].className = infoRows[i].className + ' noshow';
-					}
-				}
-			}
-
-
-			-->
-		</script>
-
-	</head>
-	<body>
-		<div id="pagecell1">
-			<!--pagecell1-->
-			<div id="top">
-				
-				<h1><a href="en.html">Xiaojiang Peng</a></h1>
-				Full Professor, College of Big Data and Internet, Shenzhen Technology University.
-				
-				<div id="top-right">
-					<a href="en.html"> Home </a>  | <a href="students.html">Student</a> | <a href="pubs.html">Selected Publications</a>  | <a href="index.html"> 中文 </a> 
-				</div>
-			</div>
-			
-			<div id="left">
-				<img src="meFER.jpg" alt="" /><!--width="285" height="325" /-->
-				<p>&nbsp;</p>
-				<div>
-					<h2>Link</h2>
-						<p ><a href="mailto:pengxiaojiang@sztu.edu.cn" target="_blank"><i class="icon-share-alternitive"></i> Email</a></p>
-						<p ><a href="http://github.com/pengxj" target="_blank"><i class="icon-github"></i> Github</a></p>
-						<p ><a href="https://scholar.google.com/citations?user=7oRD67kAAAAJ&hl=zh-CN" target="_blank"><i class="icon-weibo"></i> 学术</a></p>
-						<p ><a href="https://www.zhihu.com/people/xpeng-44" target="_blank"><i class="icon-zhihu-square"></i> 知乎</a></p>
-						<h2>Contact</h2>
-						<p class="list1" >广东省深圳市坪山区兰田路3002号 pengxiaojiang@sztu.edu.cn / xiaojiangp@gmail.com</p>
-					</div>
-			</div>
-
-							<div id="content">
-							
-<ol>
-	<p> Full list in <a href="https://scholar.google.com/citations?user=7oRD67kAAAAJ&hl=zh-CN">Google Scholar</a></p>
-	<p>[<strong>Representive Publications</strong>]</p>
-<li id=czb2024" class="entry">
-	Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning,  NeurIPS, 2024. 
-	<a href="https://arxiv.org/pdf/2406.11161">[PDF]</a>
-	<div class="author"> Zebang Cheng, Zhi-Qi Cheng, Jun-Yan He, Jingdong Sun, Kai Wang, Yuxiang Lin, Zheng Lian,  <strong>Xiaojiang Peng</strong>, Alexander Hauptmann</div>
-</li>
-<li id=lxp2024" class="entry">
-	Two in One Go: Single-stage Emotion Recognition with Decoupled Subject-context Transformer, ACM Multimedia, 2024. 
-	<a href="https://arxiv.org/pdf/2404.17205">[PDF]</a>
-	<div class="author"> Xinpeng Li, Teng Wang, Jian Zhao, Shuyi Mao, Jinbao Wang, Feng Zheng,<strong>Xiaojiang Peng</strong>, Xuelong Li</div>
-</li>
-<li id=czb2023" class="entry">
-	Semi-Supervised Multimodal Emotion Recognition with Expression MAE, ACM MM, 2023. 
-	<a href="https://dl.acm.org/doi/10.1145/3581783.3612840">[PDF]</a>
-	<div class="author"> Zebang Cheng, Yuxiang Lin, Zhaoru Chen, Xiang Li, Shuyi Mao, Fan Zhang, Daijun Ding, Bowen Zhang, <strong>Xiaojiang Peng</strong></div>
-</li>
-<li id="peng2020afm" class="entry">
-	 Suppressing Mislabeled Data via Grouping and Self-Attention. ECCV, 2020. 
-	<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123610766.pdf">[PDF]</a>
-	<a href="https://github.com/kaiwang960112/AFM?utm_source=catalyzex.com">[CODE]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>*, Kai Wang*, Zhaoyang Zeng*, Qing Li, Jianfei Yang, Yu Qiao.</div>
-</li>
-<li id="wang2020scn" class="entry">
-	 Suppressing Uncertainties for Large-Scale Facial Expression Recognition. CVPR, 2020. 
-	<a href="https://arxiv.org/pdf/2002.10392.pdf">[PDF]</a>
-	<a href="https://github.com/kaiwang960112/Self-Cure-Network">[CODE]</a>
-    <div class="author">Kai Wang*,<strong>Xiaojiang Peng</strong>*, Jianfei Yang, Shijian LV, Yu Qiao.</div>
-</li>
-<li id="wang2020rcn" class="entry">
-	 Region Attention Networks for Pose and Occlusion Robust Facial Expression Recognition. IEEE Transactions on Image Processing, 2020.
-	<a href="https://arxiv.org/pdf/1905.04075.pdf">[PDF]</a>
-	<a href="https://github.com/kaiwang960112/Challenge-condition-FER-dataset">[CODE]</a>
-    <div class="author">Kai Wang*,<strong>Xiaojiang Peng</strong>*, Jianfei Yang, Debin Meng, Yu Qiao.</div>
-</li>
-<li id="deng2019mcn" class="entry">
-	 Mutual Component Convolutional Neural Networks for Heterogeneous Face Recognition. IEEE Transactions on Image Processing, 2019.
-	<a href="https://ieeexplore.ieee.org/document/8624555">[PDF]</a>
-    <div class="author">Zhongying Deng*,<strong>Xiaojiang Peng</strong>*, Yu Qiao.</div>
-</li>
-<li id="zeng2019dfn" class="entry">
-	 DF2Net: A Dense-Fine-Finer Network for Detailed 3D Face Reconstruction. ICCV, 2019.
-	<a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Zeng_DF2Net_A_Dense-Fine-Finer_Network_for_Detailed_3D_Face_Reconstruction_ICCV_2019_paper.pdf">[PDF]</a>
-	<a href="https://github.com/xiaoxingzeng/DF2Net">[CODE]</a>
-    <div class="author">Xiaoxing Zeng*,<strong>Xiaojiang Peng</strong>*, Yu Qiao.</div>
-</li>
-<li id="deng2019rcn" class="entry">
-	 Residual Compensation Networks for Heterogeneous Face Recognition. AAAI, 2019.
-	<a href="https://ojs.aaai.org//index.php/AAAI/article/view/4835">[PDF]</a>
-	<a href="https://github.com/Zhongying-Deng/RCN">[CODE]</a>
-    <div class="author">Zhongying Deng*,<strong>Xiaojiang Peng</strong>*, Yu Qiao.</div>
-</li>
-<li id="hu2018fr" class="entry">
-	 Frankenstein: Learning Deep Face Representations using Small Data. IEEE Transactions on Image Processing, 2018.
-	<a href="https://hal.inria.fr/hal-01306168/file/bare_jrnl.pdf">[PDF]</a>
-    <div class="author">Guosheng Hu, <strong>Xiaojiang Peng</strong>, Yongxin Yang, Timothy Hospedales, Jakob Verbeek.</div>
-</li>
-<li id="peng2016action" class="entry">
-	 Multi-region two-stream R-CNN for action detection. ECCV, 2016. 
-	<a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/eccv2016-update2.pdf">[PDF]</a>
-	<a href="https://github.com/pengxj/action-faster-rcnn">[CODE]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>, Cordelia Schmid.</div>
-</li>
-<li id="peng2016bof" class="entry">
-	 Bag of Visual Words and Fusion Methods for Action Recognition: Comprehensive Study and Good Practice. Computer Vision and Image Understanding (CVIU), 2016. 
-	<a href="">[PDF]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>, Limin Wang, Xingxing Wang, Yu Qiao.</div>
-</li>
-<li id="peng2014sfv" class="entry">
-	 Action Recognition with Stacked Fisher Vectors. ECCV, 2014. 
-	<a href="https://link.springer.com/chapter/10.1007/978-3-319-10602-1_38">[PDF]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>, Changqing Zou, Yu Qiao, Qiang Peng.</div>
-</li>
-</ol>
-<ol>
-<p><strong>[2026]</strong></p>
-	<li id="vla2026" class="entry">
-	Adaptive Action Chunking at Inference-time for Vision-Language-Action Models, CVPR, 2026.
-	<a href="">[PDF]</a> 
-	<div class="author"> Yuanchang Liang, Xiaobo Wang, Kai Wang, Shuo Wang,  <strong>Xiaojiang Peng</strong>, Haoyu Chen, David Kim Huat Chua, Prahlad Vadakkepat</div></li>	
-	<li id="peng2026" class="entry">
-	A survey of robotic manipulation: From bottom-up approaches to end-to-end paradigms with LLMs, Neurocomputing, 2026. 
-	<a href="https://www.sciencedirect.com/science/article/pii/S0925231226003188">[PDF]</a> 
-	<div class="author"> Kai Peng, Qing Li, Zhijian He, Bowen Zhang, Xianghua Fu, Bin Li, Xiaohui Wang, Zhi-Qi Cheng, Yan Yan, <strong>Xiaojiang Peng</strong></div></li>	
-	<li id="zhang2026" class="entry">
-	MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models, ICLR, 2026. 
-	<a href="https://openreview.net/pdf?id=oSX9aenbea">[PDF]</a> 
-	<div class="author"> Fan Zhang,Zebang Cheng, <strong>Xiaojiang Peng</strong>, etc.</div></li>	
-	<li id="lian2026" class="entry">
-	EmoPrefer: Can Large Language Models Understand Human Emotion Preferences?, ICLR, 2026. 
-	<a href="https://openreview.net/pdf?id=EhA4znYsuG">[PDF]</a> 
-	<div class="author"> Zheng Lian, Licai Sun, Lan Chen, Haoyu Chen, Zebang Cheng, Fan Zhang, Ziyu Jia, Ziyang Ma, Fei Ma, <strong>Xiaojiang Peng</strong>, Jianhua Tao.</div></li>	
-		
-<p><strong>[2025]</strong></p>		
-	<li id="zhang2025" class="entry">
-	3D Landmark Detection on Human Point Clouds: A Benchmark and A Dual Cascade Point Transformer Framework, Expert Systems With Applications, 2025. 
-	<a href="">[PDF]</a> 
-	<div class="author"> Fan Zhang, Shuyi Mao, Qing Li, <strong>Xiaojiang Peng</strong></div></li>	
-	<li id=deng2025" class="entry">
-	Generative Models for Noise-Robust Training in Unsupervised Domain Adaptation, Pattern Recognition, 2025. 
-	<a href="https://www.sciencedirect.com/science/article/pii/S0031320325011124">[PDF]</a> 
-	<div class="author"> Zhongying Deng, Da Li, Junjun He, <strong>Xiaojiang Peng</strong>, Yi-Zhe Song, Tao Xiang</div></li>	
-	<li id=Lv2025" class="entry">
-	Pruning-Robust Mamba with Asymmetric Multi-Scale Scanning Paths, NeurIPS, 2025. 
-	<a href="https://openreview.net/pdf?id=BZSTC2RMEd">[PDF]</a> 
-	<div class="author"> Jindi Lv, Yuhao Zhou, Mingjia Shi, Zhiyuan Liang, Panpan Zhang, <strong>Xiaojiang Peng</strong>, Wangbo Zhao, Zheng Zhu, Jiancheng Lv, Qing Ye, Kai Wang</div></li>	
-	<li id=wang2025" class="entry">
-	DPDEdit: Detail-Preserved Diffusion Models for Multimodal Fashion Image Editing,  ICME, 2025. 
-	<a href="https://cmt3.research.microsoft.com/api/ICME2025/Files/22609">[PDF]</a> 
-	<div class="author"> Xiaolong Wang, Zhi-Qi Cheng, Jue Wang,<strong>Xiaojiang Peng</strong></div></li>	
-	<li id=zhang2025" class="entry">
-	LEAF: unveiling two sides of the same coin in semi-supervised facial expression recognition,  Computer Vision and Image Understanding (CVIU), 2025. 
-	<a href="">[PDF]</a> 
-	<div class="author"> Fan Zhang, Zhi-Qi Cheng, Jian Zhao,<strong>Xiaojiang Peng</strong>, Xuelong Li</div></li>	
-	<li id=zhou2025" class="entry">
-	miMamba: EEG-Based Emotion Recognition With Multi-Scale Inverted Mamba Models,  IEEE TRANSACTIONS ON AFFECTIVE COMPUTING (TAFFC), 2025. 
-	<a href="">[PDF]</a> 
-	<div class="author"> Xin Zhou, Dawei Huang, <strong>Xiaojiang Peng</strong>, Lijun Yin</div></li>	
-	<li id=zhu2025" class="entry">
-	EA-Vit: Efficient Adaptation for Elastic Vision Transformer,  ICCV, 2025. 
-	<a href="">[PDF]</a> 
-	<div class="author"> Chen Zhu, Wangbo Zhao, Huiwen Zhang, Yuhao Zhou, Weidong Tang, Shuo Wang, Zhihang Yuan, Yuzhang Shang, <strong>Xiaojiang Peng</strong>, Kai Wang, Dawei Yang</div></li>	
-	<li id=zhangf2025" class="entry">
-	AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models,  ICML, 2025. 
-	<a href="https://arxiv.org/pdf/2501.16566">[PDF]</a> 
-	<div class="author"> Zheng Lian, Haoyu Chen, Lan Chen, Haiyang Sun, Licai Sun, Yong Ren, Zebang Cheng, Bin Liu, Rui Liu, <strong>Xiaojiang Peng</strong>, Jiangyan Yi, Jianhua Tao</div></li>
-	<li id=zhangf2025" class="entry">
-	DREAM: Decoupled Discriminative Learning with Bigraph-aware Alignment for Semi-supervised 2D-3D Cross-modal Retrieval,  AAAI, 2025. 
-	<a href="https://ojs.aaai.org/index.php/AAAI/article/view/33441/35596">[PDF]</a> 
-	<div class="author">Fan Zhang, Changhu Wang, Zebang Cheng, <strong>Xiaojiang Peng</strong>, Dongjie Wang, Yijia Xiao, Chong Chen, Xian-Sheng Hua, Xiao Luo</div></li>
-	<li id=kwang2025" class="entry">
-	A Closer Look at Time Steps is Worthy of Triple Speed-Up for Diffusion Model Training,  CVPR, 2025. 
-	<a href="https://arxiv.org/pdf/2405.17403">[PDF]</a> <a href="https://github.com/NUS-HPC-AI-Lab/SpeeD">[CODE]</a>
-	<div class="author"> Kai Wang, Mingjia Shi, Zekai Li, Yukun Zhou, Zhihang Yuan, Yuzhang Shang,  <strong>Xiaojiang Peng</strong>, Hanwang Zhang, and Yang You </div></li>
-	<li id=zhan2025" class="entry">
-	DeformAvatar: Point-Based Human Avatar Re-targeting and Rendering,  ICASSP, 2025. 
-	<a href="">[PDF]</a>
-	<div class="author"> Renyi Zhan, Zhi-Qi Cheng, Junyao Chen, and <strong>Xiaojiang Peng</strong></div></li>
-	<li id=lix2025" class="entry">
-	UMETTS: A Unified Framework for Emotional Text-to-Speech Synthesis with Multimodal Prompts,  ICASSP, 2025. 
-	<a href="">[PDF]</a>  <a href="https://github.com/KTTRCDL/UMETTS">[Code]</a>
-	<div class="author"> Xiang Li, Zhi-Qi Cheng, Jun-Yan He, Junyao Chen, Xiaomao Fan, <strong>Xiaojiang Peng</strong>, and Alexander Hauptmann</div></li>
-	<li id=xu2025" class="entry">
-	Open-Vocabulary Visual Emotion Adaptation via Prompt Learning,  ICASSP, 2025. 
-	<a href="">[PDF]</a>
-	<div class="author"> Zhaopan Xu, Sicheng Zhao, <strong>Xiaojiang Peng</strong> and Hongxun Yao</div></li>
-	<li id=li2025" class="entry">
-	Enhancing 6D Pose Estimation with Cross-modal Fusion Network and Density Peak Localization,  ICASSP, 2025. 
-	<a href="">[PDF]</a>
-	<div class="author"> Liming Zhang, Qing Li, Zhenhong Chen, Chuan Yan, and <strong>Xiaojiang Peng</strong></div>
-</li>
-<p><strong>[2024]</strong></p>	
-	<li id=zhou2024" class="entry">
-	sEMG-based Joint Angle Estimation via Hierarchical Spiking Attentional Feature Decomposition Network,  IEEE Robotics and Automation Letters, 2024. 
-	<a href="">[PDF]</a>
-	<div class="author"> Xin Zhou, Chuang Lin, Can Wang, and <strong>Xiaojiang Peng</strong></div>
-</li>
-	<li id=msy2024" class="entry">
-	Facial Action Units as A Bridge of Joint Dataset Training for Facial Expression Recognition,  IEEE Transactions on Multimedia, 2024. 
-	<a href="">[PDF]</a>
-	<div class="author"> Shuyi Mao, Xinpeng Li, Fan Zhang, <strong>Xiaojiang Peng</strong>,  and Yang Yang</div>
-</li>
-	<li id=chen2024" class="entry">
-	A Comprehensive Exploration on Detecting Fake Images Generated by Stable Diffusion,  Chinese Conference on Pattern Recognition and Computer Vision (PRCV), 2024. 
-	<a href="https://openreview.net/forum?id=B8iv6BV3J2">[PDF]</a>
-	<div class="author"> Jingyi Chen, Xiaolong Wang, Zhijian He, <strong>Xiaojiang Peng</strong></div>
-</li>
-	<li id=czb2024" class="entry">
-	Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning,  NeurIPS, 2024. 
-	<a href="https://arxiv.org/pdf/2406.11161">[PDF]</a>
-	<div class="author"> Zebang Cheng, Zhi-Qi Cheng, Jun-Yan He, Jingdong Sun, Kai Wang, Yuxiang Lin, Zheng Lian,  <strong>Xiaojiang Peng</strong>, Alexander Hauptmann</div>
-</li>
-	<li id=lxp2024" class="entry">
-	Invisible Gas Detection: An RGB-Thermal Cross Attention Network and A New Benchmark,  Computer Vision and Image Understanding (CVIU), 2024. 
-	<a href="https://arxiv.org/pdf/2403.17712">[PDF]</a>
-	<div class="author"> Jue Wang, Yuxiang Lin, Qi Zhao, Dong Luo, Shuaibao Chen, Wei Chen, <strong>Xiaojiang Peng</strong></div>
-</li>
-	<li id=lxp2024" class="entry">
-	Two in One Go: Single-stage Emotion Recognition with Decoupled Subject-context Transformer, ACM Multimedia, 2024. 
-	<a href="https://arxiv.org/pdf/2404.17205">[PDF]</a>
-	<div class="author"> Xinpeng Li, Teng Wang, Jian Zhao, Shuyi Mao, Jinbao Wang, Feng Zheng,<strong>Xiaojiang Peng</strong>, Xuelong Li</div>
-</li>
-	<li id=czb2024-1" class="entry">
-	SZTU-CMU at MER2024: Improving Emotion-LLaMA with Conv-Attention for Multimodal Emotion Recognition,  ACM Multimedia, 2024. 
-	<a href="https://arxiv.org/pdf/2408.10500">[PDF]</a>
-	<div class="author"> Zebang Cheng, Shuyuan Tu, Dawei Huang, Minghan Li,  <strong>Xiaojiang Peng</strong>, Zhi-Qi Cheng, Alexander G Hauptmann</div>
-</li>
-	<li id=lq2024" class="entry">
-	Graph Attentive Dual Ensemble learning for Unsupervised Domain Adaptation on point clouds, Pattern Recognition, 2024. 
-	<a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320324004412">[PDF]</a>
-	<div class="author"> Qing Li, Chuan Yan, Qi Hao, <strong>Xiaojiang Peng</strong>, Li Liu</div>
-</li>
-	<li id=wk2024" class="entry">
-	NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling, ICLR, 2024. 
-	<a href="">[PDF]</a>
-	<div class="author"> Kun Wang, Hao Wu, Yifan Duan, Guibin Zhang, Kai Wang,<strong>Xiaojiang Peng</strong>, Yu Zheng, Yuxuan Liang, Yang Wang</div>
-</li>
-	<li id=czb2024" class="entry">
-	MIPS at SemEval-2024 Task 3: Conversational Emotion-Cause Pair Analysis with Multimodal LLM, NAACL, 2024. 
-	<a href="">[PDF]</a>
-	<div class="author"> Zebang Cheng, Fuqiang Niu, Yuxiang Lin, Zhi-Qi Cheng, Bowen Zhang,<strong>Xiaojiang Peng</strong></div>
-</li>	
-	<li id=nfq2024" class="entry">
-	A Challenge Dataset and Effective Models for Conversational Stance Detection, COLING, 2024. 
-	<a href="">[PDF]</a>
-	<div class="author"> Fuqiang Niu, Min Yang, Ang Li, Baoquan Zhang, <strong>Xiaojiang Peng</strong>, Bowen Zhang</div>
-</li>
-<p><strong>[2023]</strong></p>
-	<li id=czb2023" class="entry">
-	Semi-Supervised Multimodal Emotion Recognition with Expression MAE, ACM MM, 2023. 
-	<a href="https://dl.acm.org/doi/10.1145/3581783.3612840">[PDF]</a>
-	<div class="author"> Zebang Cheng, Yuxiang Lin, Zhaoru Chen, Xiang Li, Shuyi Mao, Fan Zhang, Daijun Ding, Bowen Zhang, <strong>Xiaojiang Peng</strong></div>
-</li>
-	<li id=lyx2023" class="entry">
-	Real-time UAV Localization and Tracking in Multi-Weather Conditions using Multispectral Image Analysis, IEEE International Conference on Real-time Computing and Robotics (RCAR), 2023. 
-	<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10249284">[PDF]</a>
-	<div class="author"> Yuxiang Lin,  <strong>Xiaojiang Peng</strong>, Jiahe Yu, Wei Chen, Yan Wu, and Hu Liu</div>
-</li>
-	<li id=pxj2023" class="entry">
-	Cascaded Vehicle Matching and Short-Term Spatial-Temporal Network for Smoky Vehicle Detection, Appl. Sci. 2023, 13(8), 4841. 
-	<a href="https://www.mdpi.com/2076-3417/13/8/4841">[PDF]</a>
-	<div class="author"> <strong>Xiaojiang Peng</strong>, Xiaomao Fan, Qingyang Wu, Jieyan Zhao, and Pan Gao</div>
-</li>
-	<li id=chen2023" class="entry">
-	DB-Net: Detecting Vehicle Smoke with Deep Block Networks, Appl. Sci. 2023, 13(8), 4941. 
-	<a href="https://www.mdpi.com/2076-3417/13/8/4941">[PDF]</a>
-	<div class="author"> Junyao, Chen<strong>Xiaojiang Peng</strong></div>
-</li>
-<p><strong>[2022]</strong></p>
-	<li id=li2022" class="entry">
-	Rail Detection: An Efficient Row-based Network and A New Benchmark,2022.07,ACM Multimedia. 
-	<a href="">[PDF]</a>
-	<div class="author"> Xinpeng Li,<strong>Xiaojiang Peng</strong></div>
-</li>
-	
-	<li id=pan2022videointer" class="entry">
-	Video Frame Interpolation Based on Deformable Kernel Region.  IJCAI, 2022. 
-	<a href="">[PDF]</a>
-	<div class="author"> Haoyue Tian, Pan Gao,<strong>Xiaojiang Peng</strong></div>
-</li>
-	<li id=peng2022aufer" class="entry">
-	AU-Guided Unsupervised Domain-Adaptive Facial Expression Recognition.  Applied Sciences. 2022, 12(9), 4366. 
-	<a href="https://www.mdpi.com/2076-3417/12/9/4366">[PDF]</a>
-	<div class="author"> <strong>Xiaojiang Peng</strong>, Yuxin Gu, Panpan Zhang</div>
-</li>
-	<li id=wang2022face" class="entry">
-	An Efficient Training Approach for Very Large Scale Face Recognition. CVPR, 2022. 
-	<a href="https://arxiv.org/pdf/2105.10375.pdf">[PDF]</a>
-	<div class="author">Kai Wang, Shuo Wang, Panpan Zhang, Zhipeng Zhou, Zheng Zhu, Xiaobo Wang, <strong>Xiaojiang Peng</strong>, Hao Li, Yang You</div>
-</li>
-	<li id=li2022pr" class="entry">
-	Unsupervised person re-identification with multi-label learning guided self-paced clustering. Pattern Recognition, 2022. (IF: 7.74) 
-	<a href="">[PDF]</a>
-	<div class="author">Qing Li, <strong>Xiaojiang Peng</strong>, Yu Qiao, Hao Qi</div>
-</li>
-	
-<p><strong>[2021]</strong></p>	
-	<li id="wang2021sib" class="entry">
-	A Comprehensive Study on Temporal Modeling for Online Action Detection. Complex and Intelligent System, 2021. (IF: 4.927) 
-	<a href="">[PDF]</a>
-	<div class="author">Wen Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao, Jian Cheng</div>
-</li>
-<li id="li2021oad" class="entry">
-	 Sequential Interactive Biased Network for Context-Aware Emotion Recognition. IJCB, 2021. 
-	<a href="">[PDF]</a>
-	<div class="author">XinPeng Li, <strong>Xiaojiang Peng</strong>, Changxing Ding</div>
-</li>
-<li id="hou2021fcl" class="entry">
-	 Detecting Human-Object Interaction via Fabricated Compositional Learning. CVPR, 2021. 
-	<a href="">[PDF]</a>
-	<div class="author">Zhi Hou, Baosheng Yu, Yu Qiao, <strong>Xiaojiang Peng</strong>, Dacheng Tao</div>
-</li>
-<li id="hou2021ATl" class="entry">
-	 Affordance Transfer Learning for Human-Object Interaction Exploration. CVPR, 2021. 
-	<a href="">[PDF]</a>
-	<div class="author">Zhi Hou, Baosheng Yu, Yu Qiao, <strong>Xiaojiang Peng</strong>, Dacheng Tao</div>
-</li>
-<li id="wang2021ttpp" class="entry">
-	 TTPP: Temporal Transformer with Progressive Prediction for Efficient Action Anticipation. Neurocomputing, 2021. 
-	<a href="https://arxiv.org/pdf/2003.03530.pdf">[PDF]</a>
-	<div class="author">Wen Wang, <strong>Xiaojiang Peng</strong>, Yanzhou Su, Yu Qiao, Jian Cheng</div>
-</li>
-	
-<p><strong>[2020]</strong></p>	
-<li id="li2020learning" class="entry">
-	Learning Category Correlations for Multi-label Image Recognition with Graph Networks. Pattern Recognition Letter, 2020. 
-    <a href="javascript:toggleInfo('li2020learning','bibtex')">[BibTeX]</a><a href="https://arxiv.org/pdf/1909.13005.pdf">[PDF]</a>
-    <div class="author">Qing Li, <strong>Xiaojiang Peng</strong>, Yu Qiao, Qiang Peng.</div>
-	
-</li>
-<div id="bib_li2020learning" class="bibtex noshow">
-<b>BibTeX</b>:
-<pre>
-@article{li2020learning,
-  title={Learning label correlations for multi-label image recognition with graph networks},
-  author={Li, Qing and Peng, Xiaojiang and Qiao, Yu and Peng, Qiang},
-  journal={Pattern Recognition Letters},
-  volume={138},
-  pages={378--384},
-  year={2020},
-  publisher={Elsevier}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Xiaojiang Peng">
+<meta name="description" content="Selected publications of Xiaojiang Peng, Professor at the School of Artificial Intelligence, Shenzhen Technology University, Lead of the OpenFEEL Group.">
+<meta name="keywords" content="Xiaojiang Peng, Shenzhen Technology University, affective computing, computer vision, embodied intelligence, OpenFEEL">
+<title>Selected Publications · Xiaojiang Peng</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --c-bg: #ffffff;
+  --c-surface: #f7f8fa;
+  --c-surface-2: #eef1f5;
+  --c-border: #e2e6ec;
+  --c-text: #1f2937;
+  --c-muted: #64748b;
+  --c-heading: #0f172a;
+  --c-link: #1d4ed8;
+  --c-link-h: #1e3a8a;
+  --c-accent: #b91c1c;
+  --c-rule: #d8dde4;
+  --f-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "Noto Sans CJK SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.06);
+  --radius-sm: 4px;
+  --radius: 8px;
 }
-</pre>
-</div>
-
-<li id="zeng2020finding" class="entry">
-	Finding Hard Faces with better Proposals and Classifier. Machine Vision Applications, 2020. 
-    <a href="javascript:toggleInfo('zeng2020finding','bibtex')">[BibTeX]</a><a href="https://link.springer.com/article/10.1007/s00138-020-01110-4">[PDF]</a>
-    <div class="author">Xiaoxing Zeng*, <strong>Xiaojiang Peng</strong>*,Yali Wang, Yu Qiao.</div>
-	
-</li>
-<div id="bib_zeng2020finding" class="bibtex noshow">
-<b>BibTeX</b>:
-<pre>
-@article{zeng2020finding,
-  title={Finding hard faces with better proposals and classifier},
-  author={Zeng, Xiaoxing and Peng, Xiaojiang and Wang, Yali and Qiao, Yu},
-  journal={Machine Vision and Applications},
-  volume={31},
-  number={7},
-  pages={1--15},
-  year={2020},
-  publisher={Springer}
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--f-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--c-text);
+  background: var(--c-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-</pre>
-</div>
-
-<li id="li2020product" class="entry">
-	Product Image Recognition with Guidance Learning and Noisy Supervision. Computer Vision and Image Understanding (CVIU), 2020.
-    <a href="javascript:toggleInfo('li2020product','bibtex')">[BibTeX]</a><a href="https://link.springer.com/article/10.1007/s00138-020-01110-4">[PDF]</a>
-    <div class="author">Qing Li, <strong>Xiaojiang Peng</strong>, Liangliang Cao, Wenbin Du, Hao Xing, Yu Qiao..</div>
-	
-</li>
-<div id="bib_li2020product" class="bibtex noshow">
-<b>BibTeX</b>:
-<pre>
-@article{li2020product,
-  title={Product image recognition with guidance learning and noisy supervision},
-  author={Li, Qing and Peng, Xiaojiang and Cao, Liangliang and Du, Wenbin and Xing, Hao and Qiao, Yu and Peng, Qiang},
-  journal={Computer Vision and Image Understanding},
-  pages={102963},
-  year={2020},
-  publisher={Elsevier}
+img { max-width: 100%; height: auto; display: block; }
+a:link, a:visited { color: var(--c-link); text-decoration: none; transition: color 0.15s ease; }
+a:hover { color: var(--c-link-h); text-decoration: underline; text-underline-offset: 2px; }
+h1, h2, h3 { color: var(--c-heading); font-family: var(--f-sans); font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--c-rule);
+  position: relative;
+  color: var(--c-heading);
 }
-</pre>
-</div>
-	
-<li id="wang2020cascade" class="entry">
-	Cascade Multi-Head Attention Networks for Action Recognition. Computer Vision and Image Understanding (CVIU), 2020.
-    <a href="javascript:toggleInfo('wang2020cascade','bibtex')">[BibTeX]</a><a href="https://link.springer.com/article/10.1007/s00138-020-01110-4">[PDF]</a>
-    <div class="author">Jiaze Wang*, <strong>Xiaojiang Peng</strong>*, Yu Qiao.</div>
-	
-</li>
-<div id="bib_wang2020cascade" class="bibtex noshow">
-<b>BibTeX</b>:
-<pre>
-@article{wang2020cascade,
-  title={Cascade multi-head attention networks for action recognition},
-  author={Wang, Jiaze and Peng, Xiaojiang and Qiao, Yu},
-  journal={Computer Vision and Image Understanding},
-  volume={192},
-  pages={102898},
-  year={2020},
-  publisher={Elsevier}
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -1px;
+  width: 2.5rem;
+  height: 2px;
+  background: var(--c-heading);
+  border-radius: 1px;
 }
-</pre>
-</div>
+p { margin: 0.6rem 0; line-height: 1.75; }
+strong { font-weight: 600; color: var(--c-heading); }
 
-<li id="peng2020afm" class="entry">
-	 Suppressing Mislabeled Data via Grouping and Self-Attention. ECCV, 2020. 
-	<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123610766.pdf">[PDF]</a>
-	<a href="https://github.com/kaiwang960112/AFM?utm_source=catalyzex.com">[CODE]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>*, Kai Wang*, Zhaoyang Zeng*, Qing Li, Jianfei Yang, Yu Qiao.</div>
-</li>
-<li id="ye2020addgcn" class="entry">
-	 Attention-Driven Dynamic Graph Convolutional Network for Multi-Label Image Recognition. ECCV, 2020. 
-	<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660647.pdf">[PDF]</a>
-    <div class="author">Jin Ye*, Junjun He*, <strong>Xiaojiang Peng</strong>*, Wenhao Wu, Yu Qiao.</div>
-</li>
-<li id="hou2020vcl" class="entry">
-	 Visual Compositional Learning for Human Object Interaction Detection. ECCV, 2020.
-	<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600579.pdf">[PDF]</a>
-	<a href="https://github.com/zhihou7/VCL">[CODE]</a>
-    <div class="author">Zhi Hou, <strong>Xiaojiang Peng</strong>*, Yu Qiao, Dacheng Tao.</div>
-</li>
-<li id="wang2020scn" class="entry">
-	 Suppressing Uncertainties for Large-Scale Facial Expression Recognition. CVPR, 2020. 
-	<a href="https://arxiv.org/pdf/2002.10392.pdf">[PDF]</a>
-	<a href="https://github.com/kaiwang960112/Self-Cure-Network">[CODE]</a>
-    <div class="author">Kai Wang*,<strong>Xiaojiang Peng</strong>*, Jianfei Yang, Shijian LV, Yu Qiao.</div>
-</li>
-<li id="wang2020rcn" class="entry">
-	 Region Attention Networks for Pose and Occlusion Robust Facial Expression Recognition. IEEE Transactions on Image Processing, 2020.
-	<a href="https://arxiv.org/pdf/1905.04075.pdf">[PDF]</a>
-	<a href="https://github.com/kaiwang960112/Challenge-condition-FER-dataset">[CODE]</a>
-    <div class="author">Kai Wang*,<strong>Xiaojiang Peng</strong>*, Jianfei Yang, Debin Meng, Yu Qiao.</div>
-</li>
-<li id="fan2020" class="entry">
-	 Learning Discriminative Representation for Facial Expression Recognition from Uncertainties. ICIP, 2020.
-	<a href="https://ieeexplore.ieee.org/document/9190643">[PDF]</a>
-    <div class="author">Xingyu Fan, Zhongying Deng, Kai Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao. </div>
-</li>
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--c-bg);
+  box-shadow: var(--shadow-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-<li id="li2020learning" class="entry">
-	Multiple Transfer Learning and Multi-label Balanced Training Strategies for Facial AU Detection In the Wild. CVPRW, 2020.
-    <a href="javascript:toggleInfo('9150797','bibtex')">[BibTeX]</a><a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w29/Ji_Multiple_Transfer_Learning_and_Multi-Label_Balanced_Training_Strategies_for_Facial_CVPRW_2020_paper.pdf">[PDF]</a>
-    <div class="author">Sijie Ji, Kai Wang, <strong>Xiaojiang Peng</strong>, Jianfei Yang, Zhaoyang Zeng, Yu Qiao.</div>
-	
-</li>
-<div id="bib_9150797" class="bibtex noshow">
-<b>BibTeX</b>:
-<pre>
-@INPROCEEDINGS{9150797,
-  author={S. {Ji} and K. {Wang} and X. {Peng} and J. {Yang} and Z. {Zeng} and Y. {Qiao}},
-  booktitle={CVPRW}, 
-  title={Multiple Transfer Learning and Multi-label Balanced Training Strategies for Facial AU Detection In the Wild}, 
-  year={2020},
-  volume={},
-  number={},
-  pages={1657-1661},
-  doi={10.1109/CVPRW50498.2020.00215}}
-</pre>
-</div>
-	
-<p><strong>[2019]</strong></p>	
-<li id="zhou2019afew" class="entry">
-	Exploring Emotion Features and Fusion Strategies for Audio-Video Emotion Recognition. International Conference on Multimodal Interaction (ICMI’19)
-     <a href="http://staff.ustc.edu.cn/~jundu/Publications/publications/ICMI19-Zhou.pdf">[PDF]</a>
-    <div class="author">Hengshun Zhou, Debin Meng, Yuanyuan Zhang, <strong>Xiaojiang Peng</strong>, Jun Du, Kai Wang, Yu Qiao</div>
-</li>
-<li id="guo2019icmi" class="entry">
-	Exploring Regularizations with Face, Body and Image Cues for Group Cohesion Prediction. International Conference on Multimodal Interaction (ICMI’19)
-     <a href="https://dl.acm.org/citation.cfm?id=3355712">[PDF]</a>
-    <div class="author">Da Guo, Kai Wang, Jianfei Yang, Kaipeng Zhang, <strong>Xiaojiang Peng</strong>, Yu Qiao</div>
-</li>
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 1.5rem 2rem 1.25rem;
+  border-bottom: 1px solid var(--c-border);
+  background: var(--c-bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: saturate(150%) blur(6px);
+  background-color: rgba(255, 255, 255, 0.92);
+}
+.site-header__brand {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.85rem;
+  min-width: 0;
+}
+.site-header__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--c-heading) !important;
+  letter-spacing: -0.01em;
+}
+.site-header__name:hover { text-decoration: none; color: var(--c-link) !important; }
+.site-header__role { font-size: 0.9rem; color: var(--c-muted); line-height: 1.5; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.92rem; }
+.site-nav a {
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  color: var(--c-muted);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.site-nav a:hover { background: var(--c-surface); color: var(--c-heading); text-decoration: none; }
+.site-nav a.is-current { color: var(--c-heading); font-weight: 600; background: var(--c-surface); }
 
-<li id="wang2019icmi" class="entry">
-	Bootstrap Model Ensemble and Rank Loss for Engagement Intensity Regression. International Conference on Multimodal Interaction (ICMI’19)
-     <a href="https://arxiv.org/pdf/1907.03422">[PDF]</a>
-    <div class="author">Hengshun Zhou, Debin Meng, Yuanyuan Zhang, <strong>Xiaojiang Peng</strong>, Jun Du, Kai Wang, Yu Qiao</div>
-</li>
-<li id="deng2019mcn" class="entry">
-	 Mutual Component Convolutional Neural Networks for Heterogeneous Face Recognition. IEEE Transactions on Image Processing, 2019.
-	<a href="https://ieeexplore.ieee.org/document/8624555">[PDF]</a>
-    <div class="author">Zhongying Deng*,<strong>Xiaojiang Peng</strong>*, Yu Qiao.</div>
-</li>
-<li id="zeng2019dfn" class="entry">
-	 DF2Net: A Dense-Fine-Finer Network for Detailed 3D Face Reconstruction. ICCV, 2019.
-	<a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Zeng_DF2Net_A_Dense-Fine-Finer_Network_for_Detailed_3D_Face_Reconstruction_ICCV_2019_paper.pdf">[PDF]</a>
-	<a href="https://github.com/xiaoxingzeng/DF2Net">[CODE]</a>
-    <div class="author">Xiaoxing Zeng*,<strong>Xiaojiang Peng</strong>*, Yu Qiao.</div>
-</li>
-<li id="deng2019rcn" class="entry">
-	 Residual Compensation Networks for Heterogeneous Face Recognition. AAAI, 2019.
-	<a href="https://ojs.aaai.org//index.php/AAAI/article/view/4835">[PDF]</a>
-	<a href="https://github.com/Zhongying-Deng/RCN">[CODE]</a>
-    <div class="author">Zhongying Deng*,<strong>Xiaojiang Peng</strong>*, Yu Qiao.</div>
-</li>
-<li id="ye2019mm" class="entry">
-	 AnoPCN: Video Anomaly Detection via Deep Predictive Coding Network. ACM MultiMedia, 2019. 
-	<a href="https://dl.acm.org/doi/10.1145/3343031.3350899">[PDF]</a>
-    <div class="author">Muchao Ye, <strong>Xiaojiang Peng</strong>*, Weihao Gan, Wei Wu, Yu Qiao.</div>
-</li>
-<li id="meng2019icip" class="entry">
-	 Frame Attention Networks for Facial Expression Recognition in Videos. ICIP, 2019.
-	<a href="https://arxiv.org/pdf/1907.00193.pdf">[PDF]</a> 
-	<a href="https://github.com/Open-Debin/Emotion-FAN">[CODE]</a>
-    <div class="author">Debin Meng, <strong>Xiaojiang Peng</strong>*, Kai Wang, Yu Qiao.</div>
-</li>
-<li id="ye2019icip" class="entry">
-	 Visual-Textual Sentiment Analysis in Product Reviews. ICIP, 2019.
-	<a href="https://ieeexplore.ieee.org/abstract/document/8802992">[PDF]</a> 
-    <div class="author">Jin Ye, <strong>Xiaojiang Peng</strong>*, Yu Qiao, Hao Xing, Junli Li, Rongrong Ji.</div>
-</li>
-<li id="guo2019zte" class="entry">
-	 Face Detection, Alignment Alignment, Quality Assessmentand Attribute Analysis with Multi-Task Hybrid Convolutional Neural Networks. ZTE COMMUNICATIONS, 2019.
-	<a href="https://res-www.zte.com.cn/mediares/magazine/publication/com_en/article/201903/en201903004.pdf">[PDF]</a> 
-    <div class="author">Da GUO, Qingfang ZHENG, <strong>Xiaojiang Peng</strong>, Ming LIU.</div>
-</li>
-<li id="chen2019access" class="entry">
-	 Recurrent Metric Networks and Batch Multiple Hypothesis for Multi-Object Tracking. IEEE Access, 2019.
-	<a href="https://ieeexplore.ieee.org/document/8584998">[PDF]</a> 
-    <div class="author">Longtao Chen, <strong>Xiaojiang Peng</strong>, Mingwu Ren.</div>
-</li>
-<p><strong>[2018 and before]</strong></p>	
-<li id="yang2018icmi" class="entry">
-	Deep Recurrent Multi-instance Learning with Spatio-temporal Features for Engagement Intensity Prediction. International Conference on Multimodal Interaction (ICMI’18)
-     <a href="https://dl.acm.org/doi/pdf/10.1145/3242969.3264981">[PDF]</a>
-    <div class="author">Jianfei Yang, Kai Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao</div>
-</li>
-<li id="yang2018icmi" class="entry">
-	Cascade Attention Networks For Group Emotion Recognition with Face, Body and Image Cues. International Conference on Multimodal Interaction (ICMI’18)
-     <a href="https://dl.acm.org/doi/pdf/10.1145/3242969.3264981">[PDF]</a>
-    <div class="author">Kai Wang, Xiaoxing Zeng, Jianfei Yang, Debin Meng, Kaipeng Zhang, <strong>Xiaojiang Peng</strong>, Yu Qiao</div>
-</li>
-<li id="hu2018fr" class="entry">
-	 Frankenstein: Learning Deep Face Representations using Small Data. IEEE Transactions on Image Processing, 2018.
-	<a href="https://hal.inria.fr/hal-01306168/file/bare_jrnl.pdf">[PDF]</a>
-    <div class="author">Guosheng Hu, <strong>Xiaojiang Peng</strong>, Yongxin Yang, Timothy Hospedales, Jakob Verbeek.</div>
-</li>
-<li id="peng2016action" class="entry">
-	 Multi-region two-stream R-CNN for action detection. ECCV, 2016. 
-	<a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/eccv2016-update2.pdf">[PDF]</a>
-	<a href="https://github.com/pengxj/action-faster-rcnn">[CODE]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>, Cordelia Schmid.</div>
-</li>
-<li id="peng2016bof" class="entry">
-	 Bag of Visual Words and Fusion Methods for Action Recognition: Comprehensive Study and Good Practice. Computer Vision and Image Understanding (CVIU), 2016. 
-	<a href="http://www.sciencedirect.com/science/article/pii/S1077314216300091">[PDF]</a>
-	<a href="https://github.com/pengxj/MatAction">[CODE]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>, Limin Wang, Xingxing Wang, Yu Qiao.</div>
-</li>
-<li id="peng2014sfv" class="entry">
-	 Action Recognition with Stacked Fisher Vectors. ECCV, 2014. 
-	<a href="https://link.springer.com/chapter/10.1007/978-3-319-10602-1_38">[PDF]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>, Changqing Zou, Yu Qiao, Qiang Peng.</div>
-</li>
-<li id="peng2014vlad" class="entry">
-	 Boosting VLAD with Supervised Dictionary Learning and High-Order Statistics. ECCV, 2014. 
-	<a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/pwqp_eccv14_shvlad.pdf">[PDF]</a>
-    <div class="author"><strong>Xiaojiang Peng</strong>, Limin Wang, Yu Qiao, Qiang Peng.</div>
-</li>
-<li id="cai2014" class="entry">
-	 Multi-View Super Vector for Action Recognition. CVPR, 2014.
-	<a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/pwqp_eccv14_shvlad.pdf">[PDF]</a>
-    <div class="author">Zuowei Cai, Limin Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao.</div>
-</li>
-</div>
-</ol>
-							</div><!-- end of content-->
-						</div>
-						<!-- end of pagecell1-->
+.page__main { flex: 1; display: block; }
+.layout-with-sidebar { display: grid; grid-template-columns: 1fr; gap: 0; }
+@media (min-width: 880px) {
+  .layout-with-sidebar { grid-template-columns: 260px 1fr; }
+}
+.layout-content { padding: 2rem 2.25rem 3rem; min-width: 0; }
+@media (max-width: 640px) {
+  .layout-content { padding: 1.5rem 1.25rem 2rem; }
+}
 
-					</body>
-				</html>
+.sidebar {
+  padding: 2rem 1.5rem 2rem;
+  border-right: 1px solid var(--c-border);
+  background: var(--c-bg);
+}
+@media (max-width: 879px) {
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--c-border);
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    padding: 1.5rem 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .sidebar { grid-template-columns: 1fr; text-align: left; }
+}
+.sidebar__photo {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  display: block;
+}
+@media (max-width: 879px) {
+  .sidebar__photo { margin: 0; max-width: 140px; }
+}
+.sidebar__section { margin-top: 1.4rem; }
+@media (max-width: 879px) {
+  .sidebar__section { margin-top: 1rem; }
+  .sidebar > .sidebar__photo { grid-row: span 4; }
+}
+.sidebar__section:first-of-type { margin-top: 0; }
+.sidebar h2 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--c-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--c-rule);
+  padding-bottom: 0.4rem;
+  margin: 0 0 0.7rem;
+}
+.sidebar h2::before { display: none; }
+.sidebar__links { list-style: none; padding: 0; margin: 0; }
+.sidebar__links li { margin: 0.1rem 0; }
+.sidebar__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  color: var(--c-text);
+  font-size: 0.95rem;
+}
+.sidebar__links a:hover { color: var(--c-link); text-decoration: none; }
+.sidebar__links svg { color: var(--c-muted); width: 17px; height: 17px; flex-shrink: 0; transition: color 0.15s ease; }
+.sidebar__links a:hover svg { color: var(--c-link); }
+.sidebar__contact { font-size: 0.86rem; color: var(--c-muted); line-height: 1.55; margin: 0; }
+.sidebar__team { font-size: 0.95rem; color: var(--c-text); margin: 0; line-height: 1.6; }
+
+.page-title { font-size: clamp(1.6rem, 3vw, 2rem); margin: 0 0 1rem; }
+.lede { margin: 0 0 1.5rem; color: var(--c-muted); font-size: 0.95rem; }
+.section { margin: 2rem 0; }
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid var(--c-rule);
+}
+.pub-list > li {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 1rem;
+  padding: 0.55rem 0 0.55rem 1.25rem;
+  margin-left: -1px;
+  position: relative;
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+.pub-list > li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 1.1rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c-bg);
+  border: 2px solid var(--c-muted);
+  transition: border-color 0.15s ease;
+}
+.pub-list > li:hover::before { border-color: var(--c-link); }
+.pub-list .entry__year {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--c-muted);
+  font-size: 0.9rem;
+  padding-top: 0.1rem;
+}
+.entry { transition: background 0.15s ease; border-radius: var(--radius-sm); }
+.entry:hover { background: var(--c-surface); }
+.entry__body { min-width: 0; }
+.entry__head { margin: 0; }
+.paper-title { color: var(--c-heading); font-weight: 600; }
+.pub-venue { color: var(--c-muted); }
+.entry__links { font-size: 0.85rem; white-space: nowrap; }
+.author { color: var(--c-muted); font-size: 0.9rem; margin: 0.15rem 0 0; }
+.author strong { color: var(--c-text); }
+@media (max-width: 520px) {
+  .pub-list > li { grid-template-columns: 1fr; gap: 0.15rem; }
+}
+
+.site-footer {
+  border-top: 1px solid var(--c-border);
+  padding: 1.25rem 2rem;
+  color: var(--c-muted);
+  font-size: 0.86rem;
+  text-align: center;
+  background: var(--c-bg);
+}
+.site-footer a { color: var(--c-muted); }
+.site-footer a:hover { color: var(--c-link); }
+.site-footer__sep { margin: 0 0.5rem; opacity: 0.5; }
+
+@media print {
+  .site-nav, .site-footer { display: none; }
+  .site-header { position: static; box-shadow: none; }
+  .page { box-shadow: none; }
+  body { background: white; }
+}
+</style>
+</head>
+<body class="lang-en">
+  <div class="page">
+    <header class="site-header">
+      <div class="site-header__brand">
+        <a class="site-header__name" href="index.html">Xiaojiang Peng</a>
+        <span class="site-header__role">School of Artificial Intelligence, Shenzhen Technology University · Lead of <a href="index.html">OpenFEEL</a> Team</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a><a href="students.html">Students</a><a href="pubs.html" class="is-current" aria-current="page">Selected Publications</a><a href="en.html">中文</a>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <div class="layout-with-sidebar">
+        <aside class="sidebar">
+          <img class="sidebar__photo" src="assets/me3.jpg" alt="Xiaojiang Peng">
+
+          <div class="sidebar__section">
+            <h2>Team</h2>
+            <p class="sidebar__team"><strong>OpenFEEL</strong> Group<br>Open Frontier Emotional and Embodied Learning</p>
+          </div>
+
+          <div class="sidebar__section">
+            <h2>Links</h2>
+            <ul class="sidebar__links">
+              <li>
+                <a href="mailto:pengxiaojiang@sztu.edu.cn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>Email</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/pengxj" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://scholar.google.com/citations?user=7oRD67kAAAAJ" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M5 13.18V17c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.82L12 18 5 13.18z"/></svg>
+                  <span>Google Scholar</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.zhihu.com/people/xpeng-44" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4"/><text x="12" y="17" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="sans-serif">知</text></svg>
+                  <span>Zhihu</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar__section">
+            <h2>Contact</h2>
+            <p class="sidebar__contact">No. 3002 Lantian Road, Pingshan District, Shenzhen, Guangdong, China<br>pengxiaojiang@sztu.edu.cn / xiaojiangp@gmail.com</p>
+          </div>
+        </aside>
+
+        <div class="layout-content">
+          <h1 class="page-title">Selected Publications</h1>
+          <p class="lede">A more comprehensive publication list: <a href="https://scholar.google.com/citations?user=7oRD67kAAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
+
+          <section class="section">
+            <h2>Representative Publications</h2>
+            <ol class="pub-list">
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning</strong>, <span class="pub-venue">NeurIPS, 2024</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2406.11161" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zebang Cheng, Zhi-Qi Cheng, Jun-Yan He, Jingdong Sun, Kai Wang, Yuxiang Lin, Zheng Lian, <strong>Xiaojiang Peng</strong>, Alexander Hauptmann</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Two in One Go: Single-stage Emotion Recognition with Decoupled Subject-context Transformer</strong>, <span class="pub-venue">ACM Multimedia, 2024</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2404.17205" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Xinpeng Li, Teng Wang, Jian Zhao, Shuyi Mao, Jinbao Wang, Feng Zheng, <strong>Xiaojiang Peng</strong>, Xuelong Li</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2023</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Semi-Supervised Multimodal Emotion Recognition with Expression MAE</strong>, <span class="pub-venue">ACM MM, 2023</span>. <span class="entry__links"><a href="https://dl.acm.org/doi/10.1145/3581783.3612840" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zebang Cheng, Yuxiang Lin, Zhaoru Chen, Xiang Li, Shuyi Mao, Fan Zhang, Daijun Ding, Bowen Zhang, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Suppressing Mislabeled Data via Grouping and Self-Attention</strong>, <span class="pub-venue">ECCV, 2020</span>. <span class="entry__links"><a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123610766.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/kaiwang960112/AFM" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>*, Kai Wang*, Zhaoyang Zeng*, Qing Li, Jianfei Yang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Suppressing Uncertainties for Large-Scale Facial Expression Recognition</strong>, <span class="pub-venue">CVPR, 2020</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2002.10392.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/kaiwang960112/Self-Cure-Network" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Kai Wang*, <strong>Xiaojiang Peng</strong>*, Jianfei Yang, Shijian Lv, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Region Attention Networks for Pose and Occlusion Robust Facial Expression Recognition</strong>, <span class="pub-venue">IEEE Transactions on Image Processing, 2020</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/1905.04075.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/kaiwang960112/Challenge-condition-FER-dataset" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Kai Wang*, <strong>Xiaojiang Peng</strong>*, Jianfei Yang, Debin Meng, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Mutual Component Convolutional Neural Networks for Heterogeneous Face Recognition</strong>, <span class="pub-venue">IEEE Transactions on Image Processing, 2019</span>. <span class="entry__links"><a href="https://ieeexplore.ieee.org/document/8624555" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zhongying Deng*, <strong>Xiaojiang Peng</strong>*, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">DF2Net: A Dense-Fine-Finer Network for Detailed 3D Face Reconstruction</strong>, <span class="pub-venue">ICCV, 2019</span>. <span class="entry__links"><a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Zeng_DF2Net_A_Dense-Fine-Finer_Network_for_Detailed_3D_Face_Reconstruction_ICCV_2019_paper.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/xiaoxingzeng/DF2Net" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Xiaoxing Zeng*, <strong>Xiaojiang Peng</strong>*, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Residual Compensation Networks for Heterogeneous Face Recognition</strong>, <span class="pub-venue">AAAI, 2019</span>. <span class="entry__links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/4835" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/Zhongying-Deng/RCN" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Zhongying Deng*, <strong>Xiaojiang Peng</strong>*, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2018</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Frankenstein: Learning Deep Face Representations using Small Data</strong>, <span class="pub-venue">IEEE Transactions on Image Processing, 2018</span>. <span class="entry__links"><a href="https://hal.inria.fr/hal-01306168/file/bare_jrnl.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Guosheng Hu, <strong>Xiaojiang Peng</strong>, Yongxin Yang, Timothy Hospedales, Jakob Verbeek</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2016</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Multi-region two-stream R-CNN for action detection</strong>, <span class="pub-venue">ECCV, 2016</span>. <span class="entry__links"><a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/eccv2016-update2.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/pengxj/action-faster-rcnn" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Cordelia Schmid</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2016</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Bag of Visual Words and Fusion Methods for Action Recognition: Comprehensive Study and Good Practice</strong>, <span class="pub-venue">Computer Vision and Image Understanding, 2016</span>. <span class="entry__links"><a href="http://www.sciencedirect.com/science/article/pii/S1077314216300091" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Limin Wang, Xingxing Wang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2014</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Action Recognition with Stacked Fisher Vectors</strong>, <span class="pub-venue">ECCV, 2014</span>. <span class="entry__links"><a href="https://link.springer.com/chapter/10.1007/978-3-319-10602-1_38" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Changqing Zou, Yu Qiao, Qiang Peng</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="section">
+            <h2>All Publications</h2>
+            <ol class="pub-list">
+
+              <li class="entry">
+                <span class="entry__year">2026</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Adaptive Action Chunking at Inference-time for Vision-Language-Action Models</strong>, <span class="pub-venue">CVPR, 2026</span></p>
+                  <p class="author">Yuanchang Liang, Xiaobo Wang, Kai Wang, Shuo Wang, <strong>Xiaojiang Peng</strong>, Haoyu Chen, David Kim Huat Chua, Prahlad Vadakkepat</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2026</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">A survey of robotic manipulation: From bottom-up approaches to end-to-end paradigms with LLMs</strong>, <span class="pub-venue">Neurocomputing, 2026</span>. <span class="entry__links"><a href="https://www.sciencedirect.com/science/article/pii/S0925231226003188" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Kai Peng, Qing Li, Zhijian He, Bowen Zhang, Xianghua Fu, Bin Li, Xiaohui Wang, Zhi-Qi Cheng, Yan Yan, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2026</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models</strong>, <span class="pub-venue">ICLR, 2026</span>. <span class="entry__links"><a href="https://openreview.net/pdf?id=oSX9aenbea" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Fan Zhang, Zebang Cheng, <strong>Xiaojiang Peng</strong>, et al.</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2026</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">EmoPrefer: Can Large Language Models Understand Human Emotion Preferences?</strong>, <span class="pub-venue">ICLR, 2026</span>. <span class="entry__links"><a href="https://openreview.net/pdf?id=EhA4znYsuG" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zheng Lian, Licai Sun, Lan Chen, Haoyu Chen, Zebang Cheng, Fan Zhang, Ziyu Jia, Ziyang Ma, Fei Ma, <strong>Xiaojiang Peng</strong>, Jianhua Tao</p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">3D Landmark Detection on Human Point Clouds: A Benchmark and A Dual Cascade Point Transformer Framework</strong>, <span class="pub-venue">Expert Systems With Applications, 2025</span></p>
+                  <p class="author">Fan Zhang, Shuyi Mao, Qing Li, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Generative Models for Noise-Robust Training in Unsupervised Domain Adaptation</strong>, <span class="pub-venue">Pattern Recognition, 2025</span>. <span class="entry__links"><a href="https://www.sciencedirect.com/science/article/pii/S0031320325011124" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zhongying Deng, Da Li, Junjun He, <strong>Xiaojiang Peng</strong>, Yi-Zhe Song, Tao Xiang</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Pruning-Robust Mamba with Asymmetric Multi-Scale Scanning Paths</strong>, <span class="pub-venue">NeurIPS, 2025</span>. <span class="entry__links"><a href="https://openreview.net/pdf?id=BZSTC2RMEd" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Jindi Lv, Yuhao Zhou, Mingjia Shi, Zhiyuan Liang, Panpan Zhang, <strong>Xiaojiang Peng</strong>, Wangbo Zhao, Zheng Zhu, Jiancheng Lv, Qing Ye, Kai Wang</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">DPDEdit: Detail-Preserved Diffusion Models for Multimodal Fashion Image Editing</strong>, <span class="pub-venue">ICME, 2025</span></p>
+                  <p class="author">Xiaolong Wang, Zhi-Qi Cheng, Jue Wang, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">LEAF: unveiling two sides of the same coin in semi-supervised facial expression recognition</strong>, <span class="pub-venue">Computer Vision and Image Understanding, 2025</span></p>
+                  <p class="author">Fan Zhang, Zhi-Qi Cheng, Jian Zhao, <strong>Xiaojiang Peng</strong>, Xuelong Li</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">miMamba: EEG-Based Emotion Recognition With Multi-Scale Inverted Mamba Models</strong>, <span class="pub-venue">IEEE Transactions on Affective Computing, 2025</span></p>
+                  <p class="author">Xin Zhou, Dawei Huang, <strong>Xiaojiang Peng</strong>, Lijun Yin</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">EA-ViT: Efficient Adaptation for Elastic Vision Transformer</strong>, <span class="pub-venue">ICCV, 2025</span></p>
+                  <p class="author">Chen Zhu, Wangbo Zhao, Huiwen Zhang, Yuhao Zhou, Weidong Tang, Shuo Wang, Zhihang Yuan, Yuzhang Shang, <strong>Xiaojiang Peng</strong>, Kai Wang, Dawei Yang</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models</strong>, <span class="pub-venue">ICML, 2025</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2501.16566" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zheng Lian, Haoyu Chen, Lan Chen, Haiyang Sun, Licai Sun, Yong Ren, Zebang Cheng, Bin Liu, Rui Liu, <strong>Xiaojiang Peng</strong>, Jiangyan Yi, Jianhua Tao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">DREAM: Decoupled Discriminative Learning with Bigraph-aware Alignment for Semi-supervised 2D-3D Cross-modal Retrieval</strong>, <span class="pub-venue">AAAI, 2025</span>. <span class="entry__links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/33441/35596" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Fan Zhang, Changhu Wang, Zebang Cheng, <strong>Xiaojiang Peng</strong>, Dongjie Wang, Yijia Xiao, Chong Chen, Xian-Sheng Hua, Xiao Luo</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">A Closer Look at Time Steps is Worthy of Triple Speed-Up for Diffusion Model Training</strong>, <span class="pub-venue">CVPR, 2025</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2405.17403" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/NUS-HPC-AI-Lab/SpeeD" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Kai Wang, Mingjia Shi, Zekai Li, Yukun Zhou, Zhihang Yuan, Yuzhang Shang, <strong>Xiaojiang Peng</strong>, Hanwang Zhang, Yang You</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">DeformAvatar: Point-Based Human Avatar Re-targeting and Rendering</strong>, <span class="pub-venue">ICASSP, 2025</span></p>
+                  <p class="author">Renyi Zhan, Zhi-Qi Cheng, Junyao Chen, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">UMETTS: A Unified Framework for Emotional Text-to-Speech Synthesis with Multimodal Prompts</strong>, <span class="pub-venue">ICASSP, 2025</span>. <span class="entry__links"><a href="https://github.com/KTTRCDL/UMETTS" target="_blank" rel="noopener">Code</a></span></p>
+                  <p class="author">Xiang Li, Zhi-Qi Cheng, Jun-Yan He, Junyao Chen, Xiaomao Fan, <strong>Xiaojiang Peng</strong>, Alexander Hauptmann</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Open-Vocabulary Visual Emotion Adaptation via Prompt Learning</strong>, <span class="pub-venue">ICASSP, 2025</span></p>
+                  <p class="author">Zhaopan Xu, Sicheng Zhao, <strong>Xiaojiang Peng</strong>, Hongxun Yao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2025</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Enhancing 6D Pose Estimation with Cross-modal Fusion Network and Density Peak Localization</strong>, <span class="pub-venue">ICASSP, 2025</span></p>
+                  <p class="author">Liming Zhang, Qing Li, Zhenhong Chen, Chuan Yan, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">sEMG-based Joint Angle Estimation via Hierarchical Spiking Attentional Feature Decomposition Network</strong>, <span class="pub-venue">IEEE Robotics and Automation Letters, 2024</span></p>
+                  <p class="author">Xin Zhou, Chuang Lin, Can Wang, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Facial Action Units as A Bridge of Joint Dataset Training for Facial Expression Recognition</strong>, <span class="pub-venue">IEEE Transactions on Multimedia, 2024</span></p>
+                  <p class="author">Shuyi Mao, Xinpeng Li, Fan Zhang, <strong>Xiaojiang Peng</strong>, Yang Yang</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">A Comprehensive Exploration on Detecting Fake Images Generated by Stable Diffusion</strong>, <span class="pub-venue">PRCV, 2024</span>. <span class="entry__links"><a href="https://openreview.net/forum?id=B8iv6BV3J2" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Jingyi Chen, Xiaolong Wang, Zhijian He, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning</strong>, <span class="pub-venue">NeurIPS, 2024</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2406.11161" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zebang Cheng, Zhi-Qi Cheng, Jun-Yan He, Jingdong Sun, Kai Wang, Yuxiang Lin, Zheng Lian, <strong>Xiaojiang Peng</strong>, Alexander Hauptmann</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Invisible Gas Detection: An RGB-Thermal Cross Attention Network and A New Benchmark</strong>, <span class="pub-venue">Computer Vision and Image Understanding, 2024</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2403.17712" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Jue Wang, Yuxiang Lin, Qi Zhao, Dong Luo, Shuaibao Chen, Wei Chen, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Two in One Go: Single-stage Emotion Recognition with Decoupled Subject-context Transformer</strong>, <span class="pub-venue">ACM Multimedia, 2024</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2404.17205" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Xinpeng Li, Teng Wang, Jian Zhao, Shuyi Mao, Jinbao Wang, Feng Zheng, <strong>Xiaojiang Peng</strong>, Xuelong Li</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">SZTU-CMU at MER2024: Improving Emotion-LLaMA with Conv-Attention for Multimodal Emotion Recognition</strong>, <span class="pub-venue">ACM Multimedia, 2024</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2408.10500" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zebang Cheng, Shuyuan Tu, Dawei Huang, Minghan Li, <strong>Xiaojiang Peng</strong>, Zhi-Qi Cheng, Alexander G. Hauptmann</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Graph Attentive Dual Ensemble learning for Unsupervised Domain Adaptation on point clouds</strong>, <span class="pub-venue">Pattern Recognition, 2024</span>. <span class="entry__links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320324004412" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Qing Li, Chuan Yan, Qi Hao, <strong>Xiaojiang Peng</strong>, Li Liu</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling</strong>, <span class="pub-venue">ICLR, 2024</span></p>
+                  <p class="author">Kun Wang, Hao Wu, Yifan Duan, Guibin Zhang, Kai Wang, <strong>Xiaojiang Peng</strong>, Yu Zheng, Yuxuan Liang, Yang Wang</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">MIPS at SemEval-2024 Task 3: Conversational Emotion-Cause Pair Analysis with Multimodal LLM</strong>, <span class="pub-venue">NAACL, 2024</span></p>
+                  <p class="author">Zebang Cheng, Fuqiang Niu, Yuxiang Lin, Zhi-Qi Cheng, Bowen Zhang, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2024</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">A Challenge Dataset and Effective Models for Conversational Stance Detection</strong>, <span class="pub-venue">COLING, 2024</span></p>
+                  <p class="author">Fuqiang Niu, Min Yang, Ang Li, Baoquan Zhang, <strong>Xiaojiang Peng</strong>, Bowen Zhang</p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2023</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Semi-Supervised Multimodal Emotion Recognition with Expression MAE</strong>, <span class="pub-venue">ACM MM, 2023</span>. <span class="entry__links"><a href="https://dl.acm.org/doi/10.1145/3581783.3612840" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zebang Cheng, Yuxiang Lin, Zhaoru Chen, Xiang Li, Shuyi Mao, Fan Zhang, Daijun Ding, Bowen Zhang, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2023</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Real-time UAV Localization and Tracking in Multi-Weather Conditions using Multispectral Image Analysis</strong>, <span class="pub-venue">IEEE RCAR, 2023</span>. <span class="entry__links"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10249284" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Yuxiang Lin, <strong>Xiaojiang Peng</strong>, Jiahe Yu, Wei Chen, Yan Wu, Hu Liu</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2023</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Cascaded Vehicle Matching and Short-Term Spatial-Temporal Network for Smoky Vehicle Detection</strong>, <span class="pub-venue">Applied Sciences, 13(8), 4841, 2023</span>. <span class="entry__links"><a href="https://www.mdpi.com/2076-3417/13/8/4841" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Xiaomao Fan, Qingyang Wu, Jieyan Zhao, Pan Gao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2023</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Detecting Vehicle Smoke with Deep Block Networks</strong>, <span class="pub-venue">Applied Sciences, 13(8), 4941, 2023</span>. <span class="entry__links"><a href="https://www.mdpi.com/2076-3417/13/8/4941" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Junyao Chen, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2022</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Rail Detection: An Efficient Row-based Network and A New Benchmark</strong>, <span class="pub-venue">ACM Multimedia, 2022</span></p>
+                  <p class="author">Xinpeng Li, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2022</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Video Frame Interpolation Based on Deformable Kernel Region</strong>, <span class="pub-venue">IJCAI, 2022</span></p>
+                  <p class="author">Haoyue Tian, Pan Gao, <strong>Xiaojiang Peng</strong></p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2022</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">AU-Guided Unsupervised Domain-Adaptive Facial Expression Recognition</strong>, <span class="pub-venue">Applied Sciences, 12(9), 4366, 2022</span>. <span class="entry__links"><a href="https://www.mdpi.com/2076-3417/12/9/4366" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Yuxin Gu, Panpan Zhang</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2022</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">An Efficient Training Approach for Very Large Scale Face Recognition</strong>, <span class="pub-venue">CVPR, 2022</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2105.10375.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Kai Wang, Shuo Wang, Panpan Zhang, Zhipeng Zhou, Zheng Zhu, Xiaobo Wang, <strong>Xiaojiang Peng</strong>, Hao Li, Yang You</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2022</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Unsupervised person re-identification with multi-label learning guided self-paced clustering</strong>, <span class="pub-venue">Pattern Recognition, 2022</span></p>
+                  <p class="author">Qing Li, <strong>Xiaojiang Peng</strong>, Yu Qiao, Hao Qi</p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2021</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">A Comprehensive Study on Temporal Modeling for Online Action Detection</strong>, <span class="pub-venue">Complex and Intelligent Systems, 2021</span></p>
+                  <p class="author">Wen Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao, Jian Cheng</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2021</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Sequential Interactive Biased Network for Context-Aware Emotion Recognition</strong>, <span class="pub-venue">IJCB, 2021</span></p>
+                  <p class="author">Xinpeng Li, <strong>Xiaojiang Peng</strong>, Changxing Ding</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2021</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Detecting Human-Object Interaction via Fabricated Compositional Learning</strong>, <span class="pub-venue">CVPR, 2021</span></p>
+                  <p class="author">Zhi Hou, Baosheng Yu, Yu Qiao, <strong>Xiaojiang Peng</strong>, Dacheng Tao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2021</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Affordance Transfer Learning for Human-Object Interaction Exploration</strong>, <span class="pub-venue">CVPR, 2021</span></p>
+                  <p class="author">Zhi Hou, Baosheng Yu, Yu Qiao, <strong>Xiaojiang Peng</strong>, Dacheng Tao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2021</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">TTPP: Temporal Transformer with Progressive Prediction for Efficient Action Anticipation</strong>, <span class="pub-venue">Neurocomputing, 2021</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2003.03530.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Wen Wang, <strong>Xiaojiang Peng</strong>, Yanzhou Su, Yu Qiao, Jian Cheng</p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Learning Category Correlations for Multi-label Image Recognition with Graph Networks</strong>, <span class="pub-venue">Pattern Recognition Letters, 2020</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/1909.13005.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Qing Li, <strong>Xiaojiang Peng</strong>, Yu Qiao, Qiang Peng</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Finding Hard Faces with better Proposals and Classifier</strong>, <span class="pub-venue">Machine Vision and Applications, 2020</span>. <span class="entry__links"><a href="https://link.springer.com/article/10.1007/s00138-020-01110-4" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Xiaoxing Zeng*, <strong>Xiaojiang Peng</strong>*, Yali Wang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Product Image Recognition with Guidance Learning and Noisy Supervision</strong>, <span class="pub-venue">Computer Vision and Image Understanding, 2020</span></p>
+                  <p class="author">Qing Li, <strong>Xiaojiang Peng</strong>, Liangliang Cao, Wenbin Du, Hao Xing, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Cascade Multi-Head Attention Networks for Action Recognition</strong>, <span class="pub-venue">Computer Vision and Image Understanding, 2020</span></p>
+                  <p class="author">Jiaze Wang*, <strong>Xiaojiang Peng</strong>*, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Suppressing Mislabeled Data via Grouping and Self-Attention</strong>, <span class="pub-venue">ECCV, 2020</span>. <span class="entry__links"><a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123610766.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/kaiwang960112/AFM" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>*, Kai Wang*, Zhaoyang Zeng*, Qing Li, Jianfei Yang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Attention-Driven Dynamic Graph Convolutional Network for Multi-Label Image Recognition</strong>, <span class="pub-venue">ECCV, 2020</span>. <span class="entry__links"><a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660647.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Jin Ye*, Junjun He*, <strong>Xiaojiang Peng</strong>*, Wenhao Wu, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Visual Compositional Learning for Human Object Interaction Detection</strong>, <span class="pub-venue">ECCV, 2020</span>. <span class="entry__links"><a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600579.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/zhihou7/VCL" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Zhi Hou, <strong>Xiaojiang Peng</strong>*, Yu Qiao, Dacheng Tao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Suppressing Uncertainties for Large-Scale Facial Expression Recognition</strong>, <span class="pub-venue">CVPR, 2020</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/2002.10392.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/kaiwang960112/Self-Cure-Network" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Kai Wang*, <strong>Xiaojiang Peng</strong>*, Jianfei Yang, Shijian Lv, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Region Attention Networks for Pose and Occlusion Robust Facial Expression Recognition</strong>, <span class="pub-venue">IEEE Transactions on Image Processing, 2020</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/1905.04075.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/kaiwang960112/Challenge-condition-FER-dataset" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Kai Wang*, <strong>Xiaojiang Peng</strong>*, Jianfei Yang, Debin Meng, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Learning Discriminative Representation for Facial Expression Recognition from Uncertainties</strong>, <span class="pub-venue">ICIP, 2020</span>. <span class="entry__links"><a href="https://ieeexplore.ieee.org/document/9190643" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Xingyu Fan, Zhongying Deng, Kai Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2020</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Multiple Transfer Learning and Multi-label Balanced Training Strategies for Facial AU Detection In the Wild</strong>, <span class="pub-venue">CVPRW, 2020</span>. <span class="entry__links"><a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w29/Ji_Multiple_Transfer_Learning_and_Multi-Label_Balanced_Training_Strategies_for_Facial_CVPRW_2020_paper.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Sijie Ji, Kai Wang, <strong>Xiaojiang Peng</strong>, Jianfei Yang, Zhaoyang Zeng, Yu Qiao</p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Exploring Emotion Features and Fusion Strategies for Audio-Video Emotion Recognition</strong>, <span class="pub-venue">ICMI'19</span>. <span class="entry__links"><a href="http://staff.ustc.edu.cn/~jundu/Publications/publications/ICMI19-Zhou.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Hengshun Zhou, Debin Meng, Yuanyuan Zhang, <strong>Xiaojiang Peng</strong>, Jun Du, Kai Wang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Exploring Regularizations with Face, Body and Image Cues for Group Cohesion Prediction</strong>, <span class="pub-venue">ICMI'19</span></p>
+                  <p class="author">Da Guo, Kai Wang, Jianfei Yang, Kaipeng Zhang, <strong>Xiaojiang Peng</strong>, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Bootstrap Model Ensemble and Rank Loss for Engagement Intensity Regression</strong>, <span class="pub-venue">ICMI'19</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/1907.03422" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Hengshun Zhou, Debin Meng, Yuanyuan Zhang, <strong>Xiaojiang Peng</strong>, Jun Du, Kai Wang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Mutual Component Convolutional Neural Networks for Heterogeneous Face Recognition</strong>, <span class="pub-venue">IEEE Transactions on Image Processing, 2019</span>. <span class="entry__links"><a href="https://ieeexplore.ieee.org/document/8624555" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zhongying Deng*, <strong>Xiaojiang Peng</strong>*, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">DF2Net: A Dense-Fine-Finer Network for Detailed 3D Face Reconstruction</strong>, <span class="pub-venue">ICCV, 2019</span>. <span class="entry__links"><a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Zeng_DF2Net_A_Dense-Fine-Finer_Network_for_Detailed_3D_Face_Reconstruction_ICCV_2019_paper.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/xiaoxingzeng/DF2Net" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Xiaoxing Zeng*, <strong>Xiaojiang Peng</strong>*, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Residual Compensation Networks for Heterogeneous Face Recognition</strong>, <span class="pub-venue">AAAI, 2019</span>. <span class="entry__links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/4835" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/Zhongying-Deng/RCN" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Zhongying Deng*, <strong>Xiaojiang Peng</strong>*, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">AnoPCN: Video Anomaly Detection via Deep Predictive Coding Network</strong>, <span class="pub-venue">ACM Multimedia, 2019</span>. <span class="entry__links"><a href="https://dl.acm.org/doi/10.1145/3343031.3350899" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Muchao Ye, <strong>Xiaojiang Peng</strong>*, Weihao Gan, Wei Wu, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Frame Attention Networks for Facial Expression Recognition in Videos</strong>, <span class="pub-venue">ICIP, 2019</span>. <span class="entry__links"><a href="https://arxiv.org/pdf/1907.00193.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/Open-Debin/Emotion-FAN" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author">Debin Meng, <strong>Xiaojiang Peng</strong>*, Kai Wang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Visual-Textual Sentiment Analysis in Product Reviews</strong>, <span class="pub-venue">ICIP, 2019</span>. <span class="entry__links"><a href="https://ieeexplore.ieee.org/abstract/document/8802992" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Jin Ye, <strong>Xiaojiang Peng</strong>*, Yu Qiao, Hao Xing, Junli Li, Rongrong Ji</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Face Detection, Alignment, Quality Assessment and Attribute Analysis with Multi-Task Hybrid Convolutional Neural Networks</strong>, <span class="pub-venue">ZTE Communications, 2019</span>. <span class="entry__links"><a href="https://res-www.zte.com.cn/mediares/magazine/publication/com_en/article/201903/en201903004.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Da Guo, Qingfang Zheng, <strong>Xiaojiang Peng</strong>, Ming Liu</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2019</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Recurrent Metric Networks and Batch Multiple Hypothesis for Multi-Object Tracking</strong>, <span class="pub-venue">IEEE Access, 2019</span>. <span class="entry__links"><a href="https://ieeexplore.ieee.org/document/8584998" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Longtao Chen, <strong>Xiaojiang Peng</strong>, Mingwu Ren</p>
+                </div>
+              </li>
+
+              <li class="entry">
+                <span class="entry__year">2018</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Deep Recurrent Multi-instance Learning with Spatio-temporal Features for Engagement Intensity Prediction</strong>, <span class="pub-venue">ICMI'18</span>. <span class="entry__links"><a href="https://dl.acm.org/doi/pdf/10.1145/3242969.3264981" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Jianfei Yang, Kai Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2018</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Cascade Attention Networks For Group Emotion Recognition with Face, Body and Image Cues</strong>, <span class="pub-venue">ICMI'18</span></p>
+                  <p class="author">Kai Wang, Xiaoxing Zeng, Jianfei Yang, Debin Meng, Kaipeng Zhang, <strong>Xiaojiang Peng</strong>, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2018</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Frankenstein: Learning Deep Face Representations using Small Data</strong>, <span class="pub-venue">IEEE Transactions on Image Processing, 2018</span>. <span class="entry__links"><a href="https://hal.inria.fr/hal-01306168/file/bare_jrnl.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Guosheng Hu, <strong>Xiaojiang Peng</strong>, Yongxin Yang, Timothy Hospedales, Jakob Verbeek</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2016</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Multi-region two-stream R-CNN for action detection</strong>, <span class="pub-venue">ECCV, 2016</span>. <span class="entry__links"><a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/eccv2016-update2.pdf" target="_blank" rel="noopener">PDF</a> <a href="https://github.com/pengxj/action-faster-rcnn" target="_blank" rel="noopener">CODE</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Cordelia Schmid</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2016</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Bag of Visual Words and Fusion Methods for Action Recognition: Comprehensive Study and Good Practice</strong>, <span class="pub-venue">Computer Vision and Image Understanding, 2016</span>. <span class="entry__links"><a href="http://www.sciencedirect.com/science/article/pii/S1077314216300091" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Limin Wang, Xingxing Wang, Yu Qiao</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2014</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Action Recognition with Stacked Fisher Vectors</strong>, <span class="pub-venue">ECCV, 2014</span>. <span class="entry__links"><a href="https://link.springer.com/chapter/10.1007/978-3-319-10602-1_38" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Changqing Zou, Yu Qiao, Qiang Peng</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2014</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Boosting VLAD with Supervised Dictionary Learning and High-Order Statistics</strong>, <span class="pub-venue">ECCV, 2014</span>. <span class="entry__links"><a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/pwqp_eccv14_shvlad.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author"><strong>Xiaojiang Peng</strong>, Limin Wang, Yu Qiao, Qiang Peng</p>
+                </div>
+              </li>
+              <li class="entry">
+                <span class="entry__year">2014</span>
+                <div class="entry__body">
+                  <p class="entry__head"><strong class="paper-title">Multi-View Super Vector for Action Recognition</strong>, <span class="pub-venue">CVPR, 2014</span>. <span class="entry__links"><a href="https://xjpeng.weebly.com/uploads/5/5/4/4/55444193/pwqp_eccv14_shvlad.pdf" target="_blank" rel="noopener">PDF</a></span></p>
+                  <p class="author">Zuowei Cai, Limin Wang, <strong>Xiaojiang Peng</strong>, Yu Qiao</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span>&copy; 2026 Xiaojiang Peng</span>
+        <span class="site-footer__sep">·</span>
+        <a href="mailto:pengxiaojiang@sztu.edu.cn">pengxiaojiang@sztu.edu.cn</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
